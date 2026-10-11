@@ -600,18 +600,30 @@
   justify-content: flex-start;
   width: 448.5px;
   position: relative;
-  backdrop-filter: blur(12px);
+  isolation: isolate;
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
 }
-.blur-overlay-qu-mica {
+.subject-card > :not(.blur-overlay-qu-mica),
+.subject-card2 > :not(.blur-overlay-sistema-de-representaci-n),
+.subject-card3 > :not(.blur-overlay-f-sica),
+.subject-card4 > :not(.blur-overlay) {
+  z-index: 1;
+}
+.blur-overlay-qu-mica,
+.blur-overlay-sistema-de-representaci-n,
+.blur-overlay-f-sica,
+.blur-overlay {
   background: rgba(0, 0, 0, 0.36);
-  flex-shrink: 0;
-  width: 448.5px;
-  height: 280.17px;
   position: absolute;
-  left: 0px;
-  top: 0px;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.blur-overlay-qu-mica {
+  flex-shrink: 0;
 }
 .text-margin {
   padding: 0px 0px 16px 0px;
@@ -799,18 +811,12 @@
   justify-content: flex-start;
   width: 448.5px;
   position: relative;
-  backdrop-filter: blur(12px);
+  isolation: isolate;
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
 }
 .blur-overlay-sistema-de-representaci-n {
-  background: rgba(0, 0, 0, 0.36);
   flex-shrink: 0;
-  width: 448.5px;
-  height: 258.58px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
 }
 .div2 {
   color: #53c6ff;
@@ -921,18 +927,12 @@
   justify-content: flex-start;
   width: 448.5px;
   position: relative;
-  backdrop-filter: blur(12px);
+  isolation: isolate;
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
 }
 .blur-overlay-f-sica {
-  background: rgba(0, 0, 0, 0.36);
   flex-shrink: 0;
-  width: 448.5px;
-  height: 258.58px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
 }
 .div3 {
   color: #9b4dff;
@@ -1013,17 +1013,12 @@
   justify-content: flex-start;
   width: 448.5px;
   position: relative;
+  isolation: isolate;
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
 }
 .blur-overlay {
-  background: rgba(0, 0, 0, 0.36);
   flex-shrink: 0;
-  width: 448.5px;
-  height: 280.17px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
 }
 .div4 {
   color: #55f74f;
