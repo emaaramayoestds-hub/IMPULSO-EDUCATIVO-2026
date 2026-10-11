@@ -577,6 +577,7 @@
   flex-shrink: 0;
   display: grid;
   gap: 20px;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   grid-template-columns: 448.5px 448.5px;
