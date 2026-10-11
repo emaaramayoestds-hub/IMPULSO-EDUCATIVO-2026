@@ -761,6 +761,9 @@
   flex-shrink: 0;
   position: relative;
 }
+.subject-explore-link {
+  text-decoration: none;
+}
 .explorar {
   color: #d40f13;
   text-align: left;
