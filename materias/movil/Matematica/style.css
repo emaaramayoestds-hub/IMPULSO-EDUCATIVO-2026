@@ -1,0 +1,874 @@
+.matem-ticas-mobile,
+.matem-ticas-mobile * {
+  box-sizing: border-box;
+}
+.matem-ticas-mobile {
+  background: #f5f4f0;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 667px;
+  position: relative;
+  overflow-y: auto;
+}
+.subject-detail {
+  background: #f0ede8;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.header {
+  background: #605063;
+  border-style: solid;
+  border-color: #248f8d;
+  border-width: 0px 0px 3px 0px;
+  padding: 0px 16px 0px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 56px;
+  position: relative;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon-back {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.repositorio {
+  color: #e8e6df;
+  text-align: center;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: 400;
+  position: relative;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: 400;
+  position: relative;
+}
+.text2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.matem-ticas {
+  color: #f5f4f0;
+  text-align: center;
+  font-family: "JetBrainsMono-Medium", sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.container-align {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1;
+  position: relative;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+._24-rec {
+  color: #e8e6df;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  letter-spacing: 0.66px;
+  font-weight: 400;
+  position: relative;
+}
+.container2 {
+  background: #605063;
+  padding: 32px 16px 32px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container4 {
+  opacity: 0.85;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div2 {
+  color: #248f8d;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  position: relative;
+}
+.heading-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.matem-ticas2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Fraunces-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+  position: relative;
+}
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.lgebra-c-lculo-estad-stica-y-geometr-a-para-tod {
+  color: #eff3cd;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.container5 {
+  padding: 24px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.secciones {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.button-margin {
+  padding: 12px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.button2 {
+  background: #248f8d;
+  border-style: solid;
+  border-color: #248f8d;
+  border-width: 1px;
+  padding: 10px 14px 10px 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 43px;
+  position: relative;
+}
+.lgebra {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  position: relative;
+}
+.text3 {
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+._2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "JetBrainsMono-Bold", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 700;
+  position: relative;
+}
+.button-margin2 {
+  padding: 4px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.button3 {
+  border-style: solid;
+  border-color: #b2d5ba;
+  border-width: 1px;
+  padding: 10px 14px 10px 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 43px;
+  position: relative;
+}
+.estad-stica-y-probabilidad {
+  color: #1a1215;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  position: relative;
+}
+._22 {
+  color: #1a1215;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: relative;
+}
+.c-lculo {
+  color: #1a1215;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  position: relative;
+}
+._1 {
+  color: #1a1215;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: relative;
+}
+.container-margin {
+  padding: 16px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container6 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #b2d5ba;
+  border-width: 1px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container7 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.almacenamiento {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.container8 {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.text4 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon-cloud {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  overflow: visible;
+}
+.text5 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.google-drive {
+  color: #1a1215;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.paragraph2 {
+  padding: 8px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.los-materiales-est-n-alojados-en-la-nube-instituci {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.container9 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container10 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #b2d5ba;
+  border-width: 1px;
+  padding: 10px 16px 10px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon-search {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.text-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 285px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+}
+.buscar-recursos {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.lgebra-2-archivos {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.resource-card {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #b2d5ba;
+  border-width: 1px;
+  padding: 20px 24px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container11 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container12 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.text6 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon-pdf {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.pdf {
+  color: #dc2626;
+  text-align: left;
+  font-family: "JetBrainsMono-Medium", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  letter-spacing: 0.44px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+.text7 {
+  border-style: solid;
+  border-color: #b45309;
+  border-width: 1px;
+  padding: 2px 8px 2px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.intermedio {
+  color: #b45309;
+  text-align: left;
+  font-family: "JetBrainsMono-Medium", sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+.heading-4 {
+  padding: 12px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.fundamentos-de-lgebra-lineal {
+  color: #1a1215;
+  text-align: left;
+  font-family: "Fraunces-SemiBold", sans-serif;
+  font-size: 17px;
+  line-height: 22.95px;
+  font-weight: 600;
+  position: relative;
+}
+.matrices-vectores-transformaciones-lineales-y-es {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 13.5px;
+  line-height: 21.6px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.container13 {
+  border-style: solid;
+  border-color: #b2d5ba;
+  border-width: 1px 0px 0px 0px;
+  padding: 14px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container14 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 189px;
+  position: relative;
+}
+.text8 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 16.5px;
+  position: relative;
+  overflow: hidden;
+}
+.dra-laura-m-ndez {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: relative;
+}
+.container15 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 16.5px;
+  position: relative;
+}
+.text9 {
+  opacity: 0.6;
+  width: 72.63px;
+  height: 14px;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+}
+._4-2-mb {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: -1px;
+}
+.text10 {
+  opacity: 0.6;
+  width: 66px;
+  height: 14px;
+  position: absolute;
+  left: 72.63px;
+  top: 1px;
+}
+._2026-03-15 {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: -1px;
+}
+.link {
+  background: #248f8d;
+  padding: 7px 14px 7px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon-cloud2 {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  overflow: visible;
+}
+.acceder {
+  color: #ffffff;
+  text-align: left;
+  font-family: "JetBrainsMono-Medium", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.24px;
+  font-weight: 500;
+  position: relative;
+}
+.resource-card2 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #248f8d;
+  border-width: 1px 1px 1px 4px;
+  padding: 20px 24px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon-pdf2 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.text11 {
+  border-style: solid;
+  border-color: #dc2626;
+  border-width: 1px;
+  padding: 2px 8px 2px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.avanzado {
+  color: #dc2626;
+  text-align: left;
+  font-family: "JetBrainsMono-Medium", sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+.ecuaciones-diferenciales-introducci-n {
+  color: #1a1215;
+  text-align: left;
+  font-family: "Fraunces-SemiBold", sans-serif;
+  font-size: 17px;
+  line-height: 22.95px;
+  font-weight: 600;
+  position: relative;
+  align-self: stretch;
+}
+.clasificaci-n-m-todos-de-soluci-n-exacta-ecuacio {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 13.5px;
+  line-height: 21.6px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.prof-carlos-r-os {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: relative;
+}
+._6-8-mb {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: -1px;
+}
+._2026-01-20 {
+  color: rgba(26, 18, 21, 0.5);
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: -1px;
+}
+.icon-cloud3 {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  overflow: visible;
+}
