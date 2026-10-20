@@ -9,9 +9,9 @@
   gap: 0px;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 667px;
+  min-height: 100vh;
   position: relative;
-  overflow-y: auto;
+  overflow-y: visible;
 }
 .subject-detail {
   background: #f0ede8;
