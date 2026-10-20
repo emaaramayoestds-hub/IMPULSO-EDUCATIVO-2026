@@ -616,10 +616,11 @@
   color: inherit;
   cursor: pointer;
   text-decoration: none;
-  transition: transform 180ms ease;
+  transition: transform 240ms ease-in-out;
 }
-[data-subject-card]:hover {
-  transform: scale(0.97);
+.container17 > a[data-subject-card]:hover {
+  transform: scale(0.94);
+  z-index: 1;
 }
 [data-subject-card]:focus-visible {
   outline: 2px solid #248f8d;
