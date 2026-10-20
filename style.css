@@ -1254,3 +1254,64 @@
   left: 778.39px;
   top: 78px;
 }
+
+.portada-escritorio-claro.tema-oscuro .header {
+  background: #100e11;
+  border-color: #248f8d;
+}
+.portada-escritorio-claro.tema-oscuro .div {
+  color: #248f8d;
+}
+.portada-escritorio-claro.tema-oscuro .edu-repositorio,
+.portada-escritorio-claro.tema-oscuro .repositorio-digital-educativo,
+.portada-escritorio-claro.tema-oscuro .en-este-apartado-encontraras-los-repositorios-de-l,
+.portada-escritorio-claro.tema-oscuro ._4,
+.portada-escritorio-claro.tema-oscuro ._102,
+.portada-escritorio-claro.tema-oscuro ._10 {
+  color: #ffffff;
+}
+.portada-escritorio-claro.tema-oscuro .materias,
+.portada-escritorio-claro.tema-oscuro .div5 {
+  color: #248f8d;
+}
+.portada-escritorio-claro.tema-oscuro .acerca-de,
+.portada-escritorio-claro.tema-oscuro .ciclo-2026-ii,
+.portada-escritorio-claro.tema-oscuro .materias2,
+.portada-escritorio-claro.tema-oscuro .recursos-totales,
+.portada-escritorio-claro.tema-oscuro .secciones,
+.portada-escritorio-claro.tema-oscuro .google-drive-institucional-one-drive-acad-mico,
+.portada-escritorio-claro.tema-oscuro .acceso-requerido,
+.portada-escritorio-claro.tema-oscuro .edu-repositorio-2026 {
+  color: #7a8aaa;
+}
+.portada-escritorio-claro.tema-oscuro .button {
+  background: transparent;
+  border-color: #3a2d40;
+}
+.portada-escritorio-claro.tema-oscuro .tema-claro {
+  color: #eff3cd;
+}
+.portada-escritorio-claro.tema-oscuro .almacenamiento-en-la-nube {
+  color: #ffffff;
+}
+.portada-escritorio-claro.tema-oscuro .container3,
+.portada-escritorio-claro.tema-oscuro .container21 {
+  background: #100e11;
+}
+.portada-escritorio-claro.tema-oscuro .container21 {
+  border-color: #3a2d40;
+}
+.portada-escritorio-claro.tema-oscuro .container26 {
+  border-color: #1e2a44;
+}
+.portada-escritorio-claro.tema-oscuro .usa-tu-correo-institucional-para-descargar-los-arc {
+  color: #aaaaaa;
+}
+.theme-toggle {
+  cursor: pointer;
+  font: inherit;
+}
+.theme-toggle:focus-visible {
+  outline: 2px solid #248f8d;
+  outline-offset: 3px;
+}
