@@ -1,17 +1,17 @@
-.repositorio-digital-educativo,
-.repositorio-digital-educativo * {
+.portada-escritorio-claro,
+.portada-escritorio-claro * {
   box-sizing: border-box;
 }
-.repositorio-digital-educativo {
+.portada-escritorio-claro {
   background: #f5f4f0;
   display: flex;
   flex-direction: column;
   gap: 0px;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 768px;
+  min-height: 100vh;
   position: relative;
-  overflow-y: auto;
+  overflow-x: hidden;
 }
 .library {
   background: #f5f4f0;
@@ -25,9 +25,9 @@
   position: relative;
 }
 .header {
-  background: #100e11;
+  background: #f2ebdd;
   border-style: solid;
-  border-color: #248f8d;
+  border-color: #d0cec6;
   border-width: 0px 0px 3px 0px;
   padding: 0px 40px 0px 40px;
   display: flex;
@@ -59,7 +59,7 @@
   position: relative;
 }
 .div {
-  color: #248f8d;
+  color: #0f1629;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 20px;
@@ -68,7 +68,7 @@
   position: relative;
 }
 .edu-repositorio {
-  color: #ffffff;
+  color: #0f1629;
   text-align: left;
   font-family: "Fraunces-SemiBold", sans-serif;
   font-size: 17px;
@@ -99,7 +99,7 @@
   position: relative;
 }
 .materias {
-  color: #248f8d;
+  color: #0f1629;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 12px;
@@ -109,7 +109,7 @@
   position: relative;
 }
 .recientes {
-  color: #7a8aaa;
+  color: #595650;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 12px;
@@ -119,7 +119,7 @@
   position: relative;
 }
 .favoritos {
-  color: #7a8aaa;
+  color: #595650;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 12px;
@@ -129,7 +129,7 @@
   position: relative;
 }
 .acerca-de {
-  color: #7a8aaa;
+  color: #595650;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 12px;
@@ -139,8 +139,9 @@
   position: relative;
 }
 .button {
+  background: #ffffff;
   border-style: solid;
-  border-color: #3a2d40;
+  border-color: #d0cec6;
   border-width: 1px;
   padding: 4px 10px 4px 10px;
   display: flex;
@@ -152,7 +153,7 @@
   position: relative;
 }
 .tema-claro {
-  color: #eff3cd;
+  color: #0f1629;
   text-align: center;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 11px;
@@ -180,7 +181,7 @@
   position: relative;
 }
 .ciclo-2026-ii {
-  color: #7a8aaa;
+  color: #595650;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 11px;
@@ -189,7 +190,7 @@
   position: relative;
 }
 .container3 {
-  background: #100e11;
+  background: #f2ebdd;
   padding: 64px 40px 56px 40px;
   display: flex;
   flex-direction: column;
@@ -231,8 +232,8 @@
   flex-shrink: 0;
   position: relative;
 }
-.repositorio-digital-educativo2 {
-  color: #ffffff;
+.repositorio-digital-educativo {
+  color: #0f1629;
   text-align: left;
   font-family: "Alexandria-Regular", sans-serif;
   font-size: 11px;
@@ -298,7 +299,7 @@
   position: relative;
 }
 .en-este-apartado-encontraras-los-repositorios-de-l {
-  color: #ffffff;
+  color: #0f1629;
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
   font-size: 16px;
@@ -330,7 +331,7 @@
   position: relative;
 }
 ._4 {
-  color: #ffffff;
+  color: #0f1629;
   text-align: left;
   font-family: "Fraunces-Bold", sans-serif;
   font-size: 34px;
@@ -351,7 +352,7 @@
   position: relative;
 }
 .materias2 {
-  color: #7a8aaa;
+  color: #595650;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 11px;
@@ -372,7 +373,7 @@
   position: relative;
 }
 ._102 {
-  color: #ffffff;
+  color: #0f1629;
   text-align: left;
   font-family: "Fraunces-Bold", sans-serif;
   font-size: 34px;
@@ -393,7 +394,7 @@
   position: relative;
 }
 .recursos-totales {
-  color: #7a8aaa;
+  color: #595650;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 11px;
@@ -414,7 +415,7 @@
   position: relative;
 }
 ._10 {
-  color: #ffffff;
+  color: #0f1629;
   text-align: left;
   font-family: "Fraunces-Bold", sans-serif;
   font-size: 34px;
@@ -435,7 +436,7 @@
   position: relative;
 }
 .secciones {
-  color: #7a8aaa;
+  color: #595650;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 11px;
@@ -528,6 +529,12 @@
   position: relative;
   overflow: visible;
 }
+.filtrar-materias {
+  min-width: 0;
+  color: #0f1629;
+  border: 0;
+  outline-offset: 3px;
+}
 .text-input {
   display: flex;
   flex-direction: column;
@@ -538,16 +545,18 @@
   width: 200px;
   height: 21px;
   position: relative;
-  overflow: hidden;
 }
 .filtrar-materias {
-  color: rgba(15, 22, 41, 0.5);
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
   font-size: 14px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
+}
+.filtrar-materias::placeholder {
+  color: rgba(15, 22, 41, 0.5);
+  opacity: 1;
 }
 .container-margin2 {
   padding: 32px 0px 0px 0px;
@@ -577,7 +586,6 @@
   flex-shrink: 0;
   display: grid;
   gap: 20px;
-  justify-content: center;
   position: relative;
   overflow: hidden;
   grid-template-columns: 448.5px 448.5px;
@@ -600,30 +608,18 @@
   justify-content: flex-start;
   width: 448.5px;
   position: relative;
-  isolation: isolate;
+  backdrop-filter: blur(12px);
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
 }
-.subject-card > :not(.blur-overlay-qu-mica),
-.subject-card2 > :not(.blur-overlay-sistema-de-representaci-n),
-.subject-card3 > :not(.blur-overlay-f-sica),
-.subject-card4 > :not(.blur-overlay) {
-  z-index: 1;
-}
-.blur-overlay-qu-mica,
-.blur-overlay-sistema-de-representaci-n,
-.blur-overlay-f-sica,
-.blur-overlay {
-  background: rgba(0, 0, 0, 0.36);
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
 .blur-overlay-qu-mica {
+  background: rgba(0, 0, 0, 0.36);
   flex-shrink: 0;
+  width: 448.5px;
+  height: 280.17px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 .text-margin {
   padding: 0px 0px 16px 0px;
@@ -774,9 +770,6 @@
   flex-shrink: 0;
   position: relative;
 }
-.subject-explore-link {
-  text-decoration: none;
-}
 .explorar {
   color: #d40f13;
   text-align: left;
@@ -811,12 +804,18 @@
   justify-content: flex-start;
   width: 448.5px;
   position: relative;
-  isolation: isolate;
+  backdrop-filter: blur(12px);
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
 }
 .blur-overlay-sistema-de-representaci-n {
+  background: rgba(0, 0, 0, 0.36);
   flex-shrink: 0;
+  width: 448.5px;
+  height: 258.58px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 .div2 {
   color: #53c6ff;
@@ -927,12 +926,18 @@
   justify-content: flex-start;
   width: 448.5px;
   position: relative;
-  isolation: isolate;
+  backdrop-filter: blur(12px);
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
 }
 .blur-overlay-f-sica {
+  background: rgba(0, 0, 0, 0.36);
   flex-shrink: 0;
+  width: 448.5px;
+  height: 258.58px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 .div3 {
   color: #9b4dff;
@@ -1013,12 +1018,20 @@
   justify-content: flex-start;
   width: 448.5px;
   position: relative;
-  isolation: isolate;
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
 }
+[data-subject-card][hidden] {
+  display: none;
+}
 .blur-overlay {
+  background: rgba(0, 0, 0, 0.36);
   flex-shrink: 0;
+  width: 448.5px;
+  height: 280.17px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 .div4 {
   color: #55f74f;

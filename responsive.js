@@ -15,9 +15,18 @@
     const subjectMatch = pathname.match(
       /^(.*)\/materias\/(?:(?:movil|tablet)\/)?(Fisica|Matematica|Quimica|SisDeRepr)(?:\/index\.html)?\/?$/
     );
+    const portadaMatch = pathname.match(
+      /^(.*)\/PortadaEscritorioClaro\.html$/
+    );
 
     let destination;
-    if (subjectMatch) {
+    if (portadaMatch) {
+      const [, basePath] = portadaMatch;
+      destination =
+        device === "desktop"
+          ? `${basePath}/`
+          : `${basePath}/${device}/`;
+    } else if (subjectMatch) {
       const [, basePath, subject] = subjectMatch;
       const devicePath = device === "desktop" ? "" : `${device}/`;
       destination = `${basePath}/materias/${devicePath}${subject}/`;
