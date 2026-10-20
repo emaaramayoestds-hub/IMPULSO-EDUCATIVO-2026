@@ -586,6 +586,7 @@
   flex-shrink: 0;
   display: grid;
   gap: 20px;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   grid-template-columns: 448.5px 448.5px;
@@ -608,7 +609,6 @@
   justify-content: flex-start;
   width: 448.5px;
   position: relative;
-  backdrop-filter: blur(12px);
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
 }
@@ -620,6 +620,8 @@
   position: absolute;
   left: 0px;
   top: 0px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 .text-margin {
   padding: 0px 0px 16px 0px;
@@ -804,7 +806,6 @@
   justify-content: flex-start;
   width: 448.5px;
   position: relative;
-  backdrop-filter: blur(12px);
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
 }
@@ -816,6 +817,8 @@
   position: absolute;
   left: 0px;
   top: 0px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 .div2 {
   color: #53c6ff;
@@ -926,7 +929,6 @@
   justify-content: flex-start;
   width: 448.5px;
   position: relative;
-  backdrop-filter: blur(12px);
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
 }
@@ -938,6 +940,8 @@
   position: absolute;
   left: 0px;
   top: 0px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 .div3 {
   color: #9b4dff;
@@ -1032,6 +1036,8 @@
   position: absolute;
   left: 0px;
   top: 0px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 .div4 {
   color: #55f74f;
