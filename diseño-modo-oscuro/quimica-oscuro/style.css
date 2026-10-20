@@ -1,0 +1,951 @@
+.qu-mica-escritorio-oscuro,
+.qu-mica-escritorio-oscuro * {
+  box-sizing: border-box;
+}
+.qu-mica-escritorio-oscuro {
+  background: #100e11;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 768px;
+  position: relative;
+  overflow-y: auto;
+}
+.subject-detail {
+  background: #0f1629;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.header {
+  background: #100e11;
+  border-style: solid;
+  border-color: #248f8d;
+  border-width: 0px 0px 3px 0px;
+  padding: 0px 32px 0px 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 56px;
+  position: relative;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon-back {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.repositorio {
+  color: rgba(255, 255, 255, 0.39);
+  text-align: center;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: 400;
+  position: relative;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: 400;
+  position: relative;
+}
+.text2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 54.61px;
+  height: 19.5px;
+  position: relative;
+  overflow: hidden;
+}
+.quimica {
+  color: #ffffff;
+  text-align: left;
+  font-family: "JetBrainsMono-Medium", sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: 500;
+  position: relative;
+}
+.container-align {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1;
+  position: relative;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+._31-rec {
+  color: #ffffff;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  letter-spacing: 0.66px;
+  font-weight: 400;
+  position: relative;
+}
+.container2 {
+  background: #100e11;
+  padding: 40px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  flex-shrink: 0;
+  max-width: 1100px;
+  position: relative;
+}
+.container4 {
+  opacity: 0.85;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.h-o {
+  color: #248f8d;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  position: relative;
+}
+.heading-1 {
+  padding: 8px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 933px;
+  height: 55px;
+  position: relative;
+}
+.quimica2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Fraunces-Bold", sans-serif;
+  font-size: 42px;
+  line-height: 46.2px;
+  font-weight: 700;
+  position: relative;
+}
+.paragraph-margin {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.nomenclatura-qu-mica-reacciones-tabla-peri-dica {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  width: 520px;
+}
+.container5 {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  flex-shrink: 0;
+  max-width: 1100px;
+  position: relative;
+}
+.container6 {
+  align-self: stretch;
+  flex-shrink: 0;
+  display: grid;
+  gap: 32px;
+  position: relative;
+  grid-template-columns: 220px 681px;
+  grid-template-rows: 518.66px;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 518.66px;
+  position: relative;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.secciones {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.button-margin {
+  padding: 12px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.button2 {
+  background: #248f8d;
+  border-style: solid;
+  border-color: #248f8d;
+  border-width: 1px;
+  padding: 10px 14px 10px 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 220px;
+  height: 43px;
+  position: relative;
+}
+.biolog-a {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  position: relative;
+}
+.text3 {
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+._2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "JetBrainsMono-Bold", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 700;
+  position: relative;
+}
+.button-margin2 {
+  padding: 4px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.button3 {
+  background: #0f1629;
+  border-style: solid;
+  border-color: #3a2d40;
+  border-width: 1px;
+  padding: 10px 14px 10px 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 220px;
+  height: 43px;
+  position: relative;
+}
+.estequiometria {
+  color: #eff3cd;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  position: relative;
+}
+._22 {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: relative;
+}
+.nivel-atomico-y-funciones {
+  color: #eff3cd;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  position: relative;
+}
+._1 {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: relative;
+}
+.container-margin {
+  padding: 32px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container7 {
+  background: #0f1629;
+  border-style: solid;
+  border-color: #3a2d40;
+  border-width: 1px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container8 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.almacenamiento {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.container9 {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 186px;
+  height: 30px;
+  position: relative;
+}
+.icon-cloud {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  overflow: visible;
+}
+.google-drive {
+  color: #eff3cd;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: 500;
+  position: relative;
+}
+.paragraph2 {
+  padding: 8px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.los-materiales-est-n-alojados-en-la-nube-instituci {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  width: 186px;
+}
+.container10 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 518.66px;
+  position: relative;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+.container11 {
+  background: #0f1629;
+  border-style: solid;
+  border-color: #3a2d40;
+  border-width: 1px;
+  padding: 10px 16px 10px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon-search {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.text-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 621px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+}
+.buscar-recursos {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.container12 {
+  padding: 24px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 681px;
+  height: 39px;
+  position: relative;
+}
+.biolog-a-2-archivos {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.container13 {
+  padding: 16px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 681px;
+  position: relative;
+}
+.resource-card {
+  background: #0f1629;
+  border-style: solid;
+  border-color: #3a2d40;
+  border-width: 1px;
+  padding: 20px 24px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container14 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container15 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.text4 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon-pdf {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.pdf {
+  color: #dc2626;
+  text-align: left;
+  font-family: "JetBrainsMono-Medium", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  letter-spacing: 0.44px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+.text5 {
+  border-style: solid;
+  border-color: #dc2626;
+  border-width: 1px;
+  padding: 2px 8px 2px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.avanzado {
+  color: #dc2626;
+  text-align: left;
+  font-family: "JetBrainsMono-Medium", sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+.heading-4 {
+  padding: 12px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 635px;
+  height: 35px;
+  position: relative;
+}
+.gen-tica-y-evoluci-n-molecular {
+  color: #eff3cd;
+  text-align: left;
+  font-family: "Fraunces-SemiBold", sans-serif;
+  font-size: 17px;
+  line-height: 22.95px;
+  font-weight: 600;
+  position: relative;
+}
+.paragraph3 {
+  padding: 8px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 635px;
+  position: relative;
+}
+.adn-arn-expresi-n-g-nica-mutaciones-y-teor-a-ev {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 13.5px;
+  line-height: 21.6px;
+  font-weight: 400;
+  position: relative;
+  width: 635px;
+}
+.container-margin2 {
+  padding: 16px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container16 {
+  border-style: solid;
+  border-color: #b2d5ba;
+  border-width: 1px 0px 0px 0px;
+  padding: 14px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container17 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 525px;
+  position: relative;
+}
+.text6 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 16.5px;
+  position: relative;
+  overflow: hidden;
+}
+.dr-marcos-pe-a {
+  color: #eff3cd;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: relative;
+}
+.container18 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 16.5px;
+  position: relative;
+}
+.text7 {
+  opacity: 0.6;
+  width: 79.22px;
+  height: 14px;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+}
+._18-4-mb {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: -1px;
+}
+.text8 {
+  opacity: 0.6;
+  width: 66px;
+  height: 14px;
+  position: absolute;
+  left: 79.22px;
+  top: 1px;
+}
+._2026-06-01 {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: -1px;
+}
+.link {
+  background: #248f8d;
+  padding: 7px 14px 7px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon-cloud2 {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  overflow: visible;
+}
+.acceder {
+  color: #ffffff;
+  text-align: left;
+  font-family: "JetBrainsMono-Medium", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.24px;
+  font-weight: 500;
+  position: relative;
+}
+.icon-video {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.video {
+  color: #7c3aed;
+  text-align: left;
+  font-family: "JetBrainsMono-Medium", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  letter-spacing: 0.44px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+.text9 {
+  border-style: solid;
+  border-color: #16a34a;
+  border-width: 1px;
+  padding: 2px 8px 2px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.b-sico {
+  color: #16a34a;
+  text-align: left;
+  font-family: "JetBrainsMono-Medium", sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+.c-lula-estructura-y-funci-n {
+  color: #eff3cd;
+  text-align: left;
+  font-family: "Fraunces-SemiBold", sans-serif;
+  font-size: 17px;
+  line-height: 22.95px;
+  font-weight: 600;
+  position: relative;
+}
+.paragraph4 {
+  padding: 8px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 635px;
+  height: 30px;
+  position: relative;
+}
+.video-animado-3-d-sobre-la-anatom-a-celular-organe {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 13.5px;
+  line-height: 21.6px;
+  font-weight: 400;
+  position: relative;
+}
+.bio-anima-studio {
+  color: #eff3cd;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: relative;
+}
+.text10 {
+  opacity: 0.6;
+  width: 72.63px;
+  height: 14px;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+}
+._640-mb {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: -1px;
+}
+.text11 {
+  opacity: 0.6;
+  width: 66px;
+  height: 14px;
+  position: absolute;
+  left: 72.63px;
+  top: 1px;
+}
+._2026-01-30 {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: -1px;
+}
+.icon-cloud3 {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  overflow: visible;
+}

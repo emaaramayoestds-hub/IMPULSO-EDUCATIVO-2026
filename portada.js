@@ -1,11 +1,15 @@
 (() => {
   const themeToggle = document.querySelector("[data-theme-toggle]");
-  const page = document.querySelector(".portada-escritorio-claro");
+  const page = document.querySelector("[data-theme-page]");
   const themeLabel = themeToggle?.querySelector(".tema-claro");
   const themeStorageKey = "edurepositorio-theme";
 
   if (themeToggle && page && themeLabel) {
+    const darkClass = page.dataset.darkClass;
+    const darkStylesheet = page.dataset.darkStylesheet;
+    const themeFixes = document.querySelector("[data-theme-fixes]");
     let isDark = false;
+    let darkStylesheetLink;
 
     try {
       isDark = localStorage.getItem(themeStorageKey) === "dark";
@@ -15,6 +19,27 @@
 
     const updateTheme = () => {
       page.classList.toggle("tema-oscuro", isDark);
+      if (darkClass) {
+        page.classList.toggle(darkClass, isDark);
+      }
+
+      if (darkStylesheet) {
+        if (isDark && !darkStylesheetLink) {
+          darkStylesheetLink = document.createElement("link");
+          darkStylesheetLink.rel = "stylesheet";
+          darkStylesheetLink.href = darkStylesheet;
+          darkStylesheetLink.dataset.themeStylesheet = "";
+          if (themeFixes) {
+            themeFixes.before(darkStylesheetLink);
+          } else {
+            document.head.append(darkStylesheetLink);
+          }
+        } else if (!isDark && darkStylesheetLink) {
+          darkStylesheetLink.remove();
+          darkStylesheetLink = undefined;
+        }
+      }
+
       themeToggle.setAttribute("aria-pressed", String(isDark));
       themeToggle.setAttribute(
         "aria-label",

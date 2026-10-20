@@ -1,18 +1,17 @@
-.repositorio-digital-educativo-mobile,
-.repositorio-digital-educativo-mobile * {
+.portada-m-vil-claro,
+.portada-m-vil-claro * {
   box-sizing: border-box;
 }
-.repositorio-digital-educativo-mobile {
+.portada-m-vil-claro {
   background: #f5f4f0;
   display: flex;
   flex-direction: column;
   gap: 0px;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 667px;
-  min-height: 667px;
+  min-height: 100vh;
   position: relative;
-  overflow-y: auto;
+  overflow-y: visible;
 }
 .library {
   background: #f5f4f0;
@@ -26,9 +25,9 @@
   position: relative;
 }
 .header {
-  background: #100e11;
+  background: #f2ebdd;
   border-style: solid;
-  border-color: #248f8d;
+  border-color: #d0cec6;
   border-width: 0px 0px 3px 0px;
   display: flex;
   flex-direction: column;
@@ -77,7 +76,7 @@
   position: relative;
 }
 .edu-repositorio {
-  color: #ffffff;
+  color: #0f1629;
   text-align: left;
   font-family: "Fraunces-SemiBold", sans-serif;
   font-size: 17px;
@@ -87,8 +86,9 @@
   position: relative;
 }
 .button {
+  background: #ffffff;
   border-style: solid;
-  border-color: #3a2d40;
+  border-color: #d0cec6;
   border-width: 1px;
   padding: 4px 10px 4px 10px;
   display: flex;
@@ -100,7 +100,7 @@
   position: relative;
 }
 .tema-claro {
-  color: #eff3cd;
+  color: #0f1629;
   text-align: center;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 11px;
@@ -148,9 +148,10 @@
   position: relative;
 }
 .link2 {
+  background: #ffffff;
   border-radius: 999px;
   border-style: solid;
-  border-color: #3a2d40;
+  border-color: #d0cec6;
   border-width: 1px;
   padding: 8px 12px 8px 12px;
   display: flex;
@@ -162,7 +163,7 @@
   position: relative;
 }
 .recientes {
-  color: #7a8aaa;
+  color: #0f1629;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 12px;
@@ -172,7 +173,7 @@
   position: relative;
 }
 .favoritos {
-  color: #7a8aaa;
+  color: #0f1629;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 12px;
@@ -182,7 +183,7 @@
   position: relative;
 }
 .acerca-de {
-  color: #7a8aaa;
+  color: #0f1629;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 12px;
@@ -212,7 +213,7 @@
   position: relative;
 }
 .ciclo-2026-ii {
-  color: #7a8aaa;
+  color: #0f1629;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 11px;
@@ -221,7 +222,7 @@
   position: relative;
 }
 .container3 {
-  background: #100e11;
+  background: #f2ebdd;
   padding: 32px 20px 32px 20px;
   display: flex;
   flex-direction: column;
@@ -233,7 +234,7 @@
   position: relative;
 }
 .repositorio-digital-educativo {
-  color: #ffffff;
+  color: #0f1629;
   text-align: left;
   font-family: "Alexandria-Regular", sans-serif;
   font-size: 11px;
@@ -279,7 +280,7 @@
   position: relative;
 }
 .en-este-apartado-encontraras-los-repositorios-de-l {
-  color: #ffffff;
+  color: #0f1629;
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
   font-size: 16px;
@@ -289,10 +290,10 @@
   align-self: stretch;
 }
 .container4 {
-  background: #0f1629;
+  background: #ffffff;
   border-radius: 16px;
   border-style: solid;
-  border-color: #3a2d40;
+  border-color: #d0cec6;
   border-width: 1px;
   padding: 16px;
   display: flex;
@@ -315,7 +316,7 @@
   position: relative;
 }
 ._4 {
-  color: #ffffff;
+  color: #0f1629;
   text-align: left;
   font-family: "Fraunces-Bold", sans-serif;
   font-size: 34px;
@@ -324,7 +325,7 @@
   position: relative;
 }
 .materias2 {
-  color: #7a8aaa;
+  color: #595650;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 11px;
@@ -335,7 +336,7 @@
   position: relative;
 }
 ._102 {
-  color: #ffffff;
+  color: #0f1629;
   text-align: left;
   font-family: "Fraunces-Bold", sans-serif;
   font-size: 34px;
@@ -344,7 +345,7 @@
   position: relative;
 }
 .recursos-totales {
-  color: #7a8aaa;
+  color: #595650;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 11px;
@@ -355,7 +356,7 @@
   position: relative;
 }
 ._10 {
-  color: #ffffff;
+  color: #0f1629;
   text-align: left;
   font-family: "Fraunces-Bold", sans-serif;
   font-size: 34px;
@@ -364,7 +365,7 @@
   position: relative;
 }
 .secciones {
-  color: #7a8aaa;
+  color: #595650;
   text-align: left;
   font-family: "JetBrainsMono-Regular", sans-serif;
   font-size: 11px;

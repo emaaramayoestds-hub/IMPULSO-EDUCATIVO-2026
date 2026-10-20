@@ -35,10 +35,11 @@
        padding: 0;
    }
    </style>
-  <title>Document</title>
+   <link rel="stylesheet" href="../../theme-fixes.css" data-theme-fixes>
+   <title>Document</title>
 </head>
 <body>
-  <div class="repositorio-digital-educativo">
+  <div class="repositorio-digital-educativo" data-theme-page data-theme-detail data-dark-class="qu-mica-escritorio-oscuro" data-dark-stylesheet="../../dise%C3%B1o-modo-oscuro/quimica-oscuro/style.css">
     <div class="subject-detail">
       <div class="header">
         <a class="button" href="../../index.html" aria-label="Volver a la portada">
@@ -52,6 +53,7 @@
           <div class="quimica">Quimica</div>
         </div>
         <div class="container-align">
+          <button class="theme-toggle-detail" type="button" data-theme-toggle aria-pressed="false" aria-label="Activar tema oscuro"><span class="tema-claro">TEMA OSCURO</span></button>
           <div class="container">
             <div class="_31-rec">31 REC.</div>
           </div>
@@ -242,5 +244,6 @@
   </div>
   
 <script src="../../responsive.js"></script>
+<script src="../../portada.js"></script>
 </body>
 </html>

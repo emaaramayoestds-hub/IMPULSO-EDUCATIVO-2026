@@ -1,0 +1,70 @@
+[data-theme-page].tema-oscuro {
+  height: auto !important;
+  min-height: 100vh;
+  overflow-y: visible !important;
+}
+
+[data-theme-detail].tema-oscuro .container6 {
+  grid-template-rows: auto !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+[data-theme-detail].tema-oscuro .navigation,
+[data-theme-detail].tema-oscuro .container10,
+[data-theme-detail].tema-oscuro .container13,
+[data-theme-detail].tema-oscuro .resource-card,
+[data-theme-detail].tema-oscuro .resource-card2 {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.theme-toggle-detail {
+  flex-shrink: 0;
+  margin-right: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 4px 7px;
+  color: #ffffff;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 9px;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.theme-toggle:not(.theme-toggle-detail) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d0cec6;
+  padding: 4px 10px;
+  color: #595650;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  cursor: pointer;
+}
+
+[data-theme-page].tema-oscuro .theme-toggle:not(.theme-toggle-detail) {
+  border-color: #3a2d40;
+  color: #eff3cd;
+}
+
+.theme-toggle-detail:focus-visible {
+  outline: 2px solid #248f8d;
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .theme-toggle-detail .tema-claro {
+    font-size: 0;
+  }
+
+  .theme-toggle-detail .tema-claro::after {
+    content: "☾";
+    font-size: 16px;
+  }
+
+  .tema-oscuro .theme-toggle-detail .tema-claro::after {
+    content: "☀";
+  }
+}

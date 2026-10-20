@@ -35,10 +35,17 @@
        padding: 0;
    }
    </style>
+  <link rel="stylesheet" href="../theme-fixes.css" data-theme-fixes>
+  <script src="../portada.js" defer></script>
   <title>Document</title>
 </head>
 <body>
-  <div class="repositorio-digital-educativo-tablet">
+  <div
+    class="portada-tablet-claro"
+    data-theme-page
+    data-dark-class="repositorio-digital-educativo-tablet"
+    data-dark-stylesheet="./dise%C3%B1o-modo-oscuro/portada-oscuro/style.css"
+  >
     <div class="library">
       <div class="header">
         <div class="header-row-1">
@@ -50,9 +57,9 @@
               <div class="edu-repositorio">EduRepositorio</div>
             </div>
           </div>
-          <div class="button">
-            <div class="tema-claro">TEMA CLARO</div>
-          </div>
+          <button class="button theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Activar tema oscuro">
+            <span class="tema-claro">TEMA OSCURO</span>
+          </button>
         </div>
         <div class="header-row-2">
           <div class="navigation">
