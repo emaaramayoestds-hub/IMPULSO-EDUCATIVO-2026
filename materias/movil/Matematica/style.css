@@ -872,3 +872,17 @@
   position: relative;
   overflow: visible;
 }
+.container6 {
+  grid-template-rows: auto;
+  height: auto;
+  overflow: visible;
+}
+.navigation,
+.container10,
+.container13,
+.resource-card,
+.resource-card2 {
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
