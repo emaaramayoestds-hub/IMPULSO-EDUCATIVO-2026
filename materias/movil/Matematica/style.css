@@ -888,8 +888,29 @@
 }
 
 .section-link {
+  background: transparent;
+  border-color: #b2d5ba;
   color: inherit;
   text-decoration: none;
+}
+
+.section-link .lgebra,
+.section-link .estad-stica-y-probabilidad,
+.section-link .c-lculo,
+.section-link .text3 > div {
+  color: #1a1215;
+}
+
+.section-link[aria-current="page"] {
+  background: #248f8d;
+  border-color: #248f8d;
+}
+
+.section-link[aria-current="page"] .lgebra,
+.section-link[aria-current="page"] .estad-stica-y-probabilidad,
+.section-link[aria-current="page"] .c-lculo,
+.section-link[aria-current="page"] .text3 > div {
+  color: #ffffff;
 }
 
 .section-link:focus-visible,

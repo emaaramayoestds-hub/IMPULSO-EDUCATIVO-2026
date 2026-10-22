@@ -4,13 +4,9 @@
     ["ecuacion-funcion-lineal", "Ecuación y función lineal"],
     ["ecuacion-funcion-cuadratica", "Ecuación y función cuadratica"],
   ]);
-  const requestedSection = new URLSearchParams(window.location.search).get(
-    "seccion"
-  );
-
-  if (requestedSection === null) {
-    return;
-  }
+  const requestedSection =
+    new URLSearchParams(window.location.search).get("seccion") ??
+    "operaciones-combinadas";
 
   const heading = document.querySelector("[data-section-list-heading]");
   const resourceList = document.querySelector("[data-section-resource-list]");
@@ -22,7 +18,13 @@
 
   const cards = [
     ...resourceList.querySelectorAll(".resource-card, .resource-card2"),
-  ];
+  ].filter((card) => {
+    if (sections.has(card.dataset.section)) {
+      return true;
+    }
+    card.remove();
+    return false;
+  });
   const sectionLinks = [...document.querySelectorAll("[data-section-link]")];
   const sectionTitle = sections.get(requestedSection);
   let visibleCount = 0;
@@ -36,6 +38,7 @@
   });
 
   sectionLinks.forEach((link) => {
+    link.removeAttribute("aria-current");
     const sectionCount = cards.filter(
       (card) => card.dataset.section === link.dataset.sectionLink
     ).length;

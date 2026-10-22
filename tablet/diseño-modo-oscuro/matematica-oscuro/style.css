@@ -549,6 +549,16 @@
 .section-empty-state {
   color: #eff3cd;
 }
+.section-link:not([aria-current="page"]) {
+  background: #0f1629;
+  border-color: #3a2d40;
+}
+.section-link:not([aria-current="page"]) .lgebra,
+.section-link:not([aria-current="page"]) .estad-stica-y-probabilidad,
+.section-link:not([aria-current="page"]) .c-lculo,
+.section-link:not([aria-current="page"]) .text3 > div {
+  color: #f5f4f0;
+}
 .container12 {
   padding: 16px 0px 0px 0px;
   display: flex;
