@@ -1,0 +1,29 @@
+.section-link:not([aria-current="page"]) {
+  background: #0f1629;
+  border-color: #1e2a44;
+}
+
+.section-link:not([aria-current="page"]) > div:not(.text2):not(.text3),
+.section-link:not([aria-current="page"]) .text2 > div,
+.section-link:not([aria-current="page"]) .text3 > div {
+  color: #f5f4f0;
+}
+
+.section-link[aria-current="page"] {
+  background: #248f8d;
+  border-color: #248f8d;
+}
+
+.section-link[aria-current="page"] > div:not(.text2):not(.text3),
+.section-link[aria-current="page"] .text2 > div,
+.section-link[aria-current="page"] .text3 > div {
+  color: #ffffff;
+}
+
+.section-back-link {
+  color: #5cccc7;
+}
+
+.section-empty-state {
+  color: #eff3cd;
+}

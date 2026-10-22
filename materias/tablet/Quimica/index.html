@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./vars.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../secciones.css">
   
   
   <style>
@@ -39,7 +40,7 @@
    <title>Document</title>
 </head>
 <body>
-  <div class="qu-mica-tablet" data-theme-page data-theme-detail data-dark-class="qu-mica-tablet-oscuro" data-dark-stylesheet="../../../tablet/dise%C3%B1o-modo-oscuro/quimica-oscuro/style.css">
+  <div class="qu-mica-tablet" data-theme-page data-theme-detail data-dark-class="qu-mica-tablet-oscuro" data-dark-stylesheet="../../../tablet/dise%C3%B1o-modo-oscuro/quimica-oscuro/style.css" data-section-dark-stylesheet="../../secciones-oscuro.css">
     <div class="subject-detail">
       <div class="header">
         <a class="button" href="../../../index.html" aria-label="Volver a la portada">
@@ -82,30 +83,34 @@
               <div class="secciones">Secciones</div>
             </div>
             <div class="button-margin">
-              <div class="button2">
+              <a class="button2 section-link" href="?seccion=biologia" data-section-link="biologia">
                 <div class="biolog-a">Biología</div>
                 <div class="text3">
-                  <div class="_2">2</div>
+                  <div class="_2">0</div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="button-margin2">
-              <div class="button3">
+              <a class="button3 section-link" href="?seccion=estequiometria" data-section-link="estequiometria">
                 <div class="estequiometria">Estequiometria</div>
                 <div class="text3">
-                  <div class="_22">2</div>
+                  <div class="_22">0</div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="button-margin2">
-              <div class="button3">
+              <a
+                class="button3 section-link"
+                href="?seccion=nivel-atomico-y-funciones"
+                data-section-link="nivel-atomico-y-funciones"
+              >
                 <div class="nivel-atomico-y-funciones">
                   Nivel Atomico y funciones
                 </div>
                 <div class="text3">
-                  <div class="_1">1</div>
+                  <div class="_1">0</div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="container-margin">
               <div class="container7">
@@ -139,9 +144,11 @@
               </div>
             </div>
             <div class="container12">
-              <div class="biolog-a-2-archivos">Biología — 2 archivos</div>
+              <div class="biolog-a-2-archivos" data-section-list-heading>
+                Biología — 2 archivos
+              </div>
             </div>
-            <div class="container13">
+            <div class="container13" data-section-resource-list>
               <div class="resource-card">
                 <div class="container14">
                   <div class="container15">
@@ -245,5 +252,6 @@
   
 <script src="../../../responsive.js"></script>
 <script src="../../../portada.js"></script>
+<script src="../../secciones.js"></script>
 </body>
 </html>

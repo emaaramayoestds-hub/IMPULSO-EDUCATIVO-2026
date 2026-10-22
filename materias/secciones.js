@@ -1,21 +1,28 @@
 (() => {
-  const sections = new Map([
-    ["operaciones-combinadas", "Operaciones combinadas"],
-    ["ecuacion-funcion-lineal", "Ecuación y función lineal"],
-    ["ecuacion-funcion-cuadratica", "Ecuación y función cuadratica"],
-  ]);
-  const requestedSection =
-    new URLSearchParams(window.location.search).get("seccion") ??
-    "operaciones-combinadas";
-
   const heading = document.querySelector("[data-section-list-heading]");
   const resourceList = document.querySelector("[data-section-resource-list]");
+  const sectionLinks = [...document.querySelectorAll("[data-section-link]")];
 
-  if (!heading || !resourceList) {
-    console.error("Falta el contenedor de la lista de recursos de Matemática.");
+  if (!heading || !resourceList || sectionLinks.length === 0) {
+    console.error("Faltan los controles de secciones o su lista de recursos.");
     return;
   }
 
+  const getSectionTitle = (link) => {
+    const title = link.cloneNode(true);
+    title.querySelectorAll(".text2, .text3").forEach((count) => count.remove());
+    return title.textContent.trim();
+  };
+  const sections = new Map(
+    sectionLinks.map((link) => [
+      link.dataset.sectionLink,
+      getSectionTitle(link),
+    ])
+  );
+  const params = new URLSearchParams(window.location.search);
+  const requestedSection =
+    params.get("seccion") ?? sectionLinks[0].dataset.sectionLink;
+  const sectionTitle = sections.get(requestedSection);
   const cards = [
     ...resourceList.querySelectorAll(".resource-card, .resource-card2"),
   ].filter((card) => {
@@ -25,8 +32,6 @@
     card.remove();
     return false;
   });
-  const sectionLinks = [...document.querySelectorAll("[data-section-link]")];
-  const sectionTitle = sections.get(requestedSection);
   let visibleCount = 0;
 
   cards.forEach((card) => {
@@ -39,12 +44,12 @@
 
   sectionLinks.forEach((link) => {
     link.removeAttribute("aria-current");
-    const sectionCount = cards.filter(
+    const count = cards.filter(
       (card) => card.dataset.section === link.dataset.sectionLink
     ).length;
-    const countLabel = link.querySelector(".text3 > div");
+    const countLabel = link.querySelector(".text2 > div, .text3 > div");
     if (countLabel) {
-      countLabel.textContent = String(sectionCount);
+      countLabel.textContent = String(count);
     }
     if (link.dataset.sectionLink === requestedSection) {
       link.setAttribute("aria-current", "page");
@@ -56,11 +61,13 @@
     : "Sección no encontrada";
   resourceList.hidden = visibleCount === 0;
 
-  const backLink = document.createElement("a");
-  backLink.className = "section-back-link";
-  backLink.href = "./";
-  backLink.textContent = "Volver a Matemáticas";
-  heading.insertAdjacentElement("afterend", backLink);
+  if (params.has("seccion")) {
+    const backLink = document.createElement("a");
+    backLink.className = "section-back-link";
+    backLink.href = "./";
+    backLink.textContent = "Volver a las secciones";
+    heading.insertAdjacentElement("afterend", backLink);
+  }
 
   const emptyState = document.createElement("p");
   emptyState.className = "section-empty-state";
@@ -71,6 +78,6 @@
   resourceList.insertAdjacentElement("afterend", emptyState);
   emptyState.hidden = visibleCount > 0;
   document.title = sectionTitle
-    ? `${sectionTitle} | Matemáticas`
-    : "Sección no encontrada | Matemáticas";
+    ? `${sectionTitle} | Repositorio Educativo`
+    : "Sección no encontrada";
 })();

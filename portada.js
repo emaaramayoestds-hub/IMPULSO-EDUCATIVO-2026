@@ -7,9 +7,11 @@
   if (themeToggle && page && themeLabel) {
     const darkClass = page.dataset.darkClass;
     const darkStylesheet = page.dataset.darkStylesheet;
+    const sectionDarkStylesheet = page.dataset.sectionDarkStylesheet;
     const themeFixes = document.querySelector("[data-theme-fixes]");
     let isDark = false;
     let darkStylesheetLink;
+    let sectionDarkStylesheetLink;
 
     try {
       isDark = localStorage.getItem(themeStorageKey) === "dark";
@@ -37,6 +39,19 @@
         } else if (!isDark && darkStylesheetLink) {
           darkStylesheetLink.remove();
           darkStylesheetLink = undefined;
+        }
+      }
+
+      if (sectionDarkStylesheet) {
+        if (isDark && !sectionDarkStylesheetLink) {
+          sectionDarkStylesheetLink = document.createElement("link");
+          sectionDarkStylesheetLink.rel = "stylesheet";
+          sectionDarkStylesheetLink.href = sectionDarkStylesheet;
+          sectionDarkStylesheetLink.dataset.themeSectionStylesheet = "";
+          document.head.append(sectionDarkStylesheetLink);
+        } else if (!isDark && sectionDarkStylesheetLink) {
+          sectionDarkStylesheetLink.remove();
+          sectionDarkStylesheetLink = undefined;
         }
       }
 
