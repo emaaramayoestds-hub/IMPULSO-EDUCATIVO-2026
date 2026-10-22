@@ -560,6 +560,9 @@
   text-transform: uppercase;
   position: relative;
 }
+.section-empty-state {
+  color: #eff3cd;
+}
 .container13 {
   padding: 16px 0px 0px 0px;
   display: flex;

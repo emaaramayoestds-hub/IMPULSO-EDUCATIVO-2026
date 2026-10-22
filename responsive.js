@@ -42,7 +42,9 @@
     }
 
     if (destination !== pathname) {
-      window.location.replace(destination);
+      window.location.replace(
+        `${destination}${window.location.search}${window.location.hash}`
+      );
     }
   };
 

@@ -539,6 +539,9 @@
   text-transform: uppercase;
   position: relative;
 }
+.section-empty-state {
+  color: #eff3cd;
+}
 .resource-card {
   background: #100e11;
   border-style: solid;
