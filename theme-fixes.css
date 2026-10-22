@@ -47,6 +47,75 @@
 [data-theme-page].tema-oscuro .theme-toggle:not(.theme-toggle-detail) {
   border-color: #3a2d40;
   color: #eff3cd;
+  background: transparent;
+}
+
+.portada-m-vil-claro .subject-card,
+.portada-m-vil-claro .subject-card2,
+.portada-tablet-claro .subject-card,
+.portada-tablet-claro .subject-card2,
+.repositorio-digital-educativo-mobile .subject-card,
+.repositorio-digital-educativo-mobile .subject-card2,
+.repositorio-digital-educativo-tablet .subject-card,
+.repositorio-digital-educativo-tablet .subject-card2 {
+  border-radius: 30px;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  box-shadow: 0 10px 24px rgba(15, 22, 41, 0.08);
+  transition: transform 240ms ease-in-out, box-shadow 240ms ease-in-out;
+}
+
+.portada-m-vil-claro .subject-card:active,
+.portada-m-vil-claro .subject-card2:active,
+.portada-tablet-claro .subject-card:active,
+.portada-tablet-claro .subject-card2:active,
+.repositorio-digital-educativo-mobile .subject-card:active,
+.repositorio-digital-educativo-mobile .subject-card2:active,
+.repositorio-digital-educativo-tablet .subject-card:active,
+.repositorio-digital-educativo-tablet .subject-card2:active {
+  transform: translate3d(0, 1px, 0) scale(0.985);
+  box-shadow: 0 5px 12px rgba(15, 22, 41, 0.16);
+}
+
+.portada-m-vil-claro .subject-card:has(a:active),
+.portada-m-vil-claro .subject-card2:has(a:active),
+.portada-tablet-claro .subject-card:has(a:active),
+.portada-tablet-claro .subject-card2:has(a:active),
+.repositorio-digital-educativo-mobile .subject-card:has(a:active),
+.repositorio-digital-educativo-mobile .subject-card2:has(a:active),
+.repositorio-digital-educativo-tablet .subject-card:has(a:active),
+.repositorio-digital-educativo-tablet .subject-card2:has(a:active) {
+  transform: translate3d(0, 1px, 0) scale(0.985);
+  box-shadow: 0 5px 12px rgba(15, 22, 41, 0.16);
+}
+
+[data-theme-page].tema-oscuro:is(.repositorio-digital-educativo-mobile, .repositorio-digital-educativo-tablet) .subject-card,
+[data-theme-page].tema-oscuro:is(.repositorio-digital-educativo-mobile, .repositorio-digital-educativo-tablet) .subject-card2 {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+[data-theme-page].tema-oscuro:is(.repositorio-digital-educativo-mobile, .repositorio-digital-educativo-tablet) .subject-card:active,
+[data-theme-page].tema-oscuro:is(.repositorio-digital-educativo-mobile, .repositorio-digital-educativo-tablet) .subject-card2:active {
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.36);
+}
+
+[data-theme-page].tema-oscuro:is(.repositorio-digital-educativo-mobile, .repositorio-digital-educativo-tablet) .subject-card:has(a:active),
+[data-theme-page].tema-oscuro:is(.repositorio-digital-educativo-mobile, .repositorio-digital-educativo-tablet) .subject-card2:has(a:active) {
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.36);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portada-m-vil-claro .subject-card,
+  .portada-m-vil-claro .subject-card2,
+  .portada-tablet-claro .subject-card,
+  .portada-tablet-claro .subject-card2,
+  .repositorio-digital-educativo-mobile .subject-card,
+  .repositorio-digital-educativo-mobile .subject-card2,
+  .repositorio-digital-educativo-tablet .subject-card,
+  .repositorio-digital-educativo-tablet .subject-card2 {
+    transition: none;
+  }
 }
 
 .theme-toggle-detail:focus-visible {
