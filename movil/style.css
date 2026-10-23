@@ -460,6 +460,8 @@
   position: relative;
 }
 .container9 {
+  align-self: center;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   gap: 0px;
