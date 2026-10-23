@@ -78,7 +78,8 @@
 }
 
 .portada-m-vil-claro .mobile-cover-backdrop .container9 {
-  background: none !important;
+  background-image: none !important;
+  background-color: transparent !important;
 }
 
 .portada-m-vil-claro .mobile-cover-backdrop .materias-disponibles,
