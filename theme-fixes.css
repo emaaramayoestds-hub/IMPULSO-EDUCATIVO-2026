@@ -50,6 +50,32 @@
   background: transparent;
 }
 
+.portada-m-vil-claro .mobile-cover-backdrop {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  background-image: url("movil/container10.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.portada-m-vil-claro .mobile-cover-backdrop > .container3,
+.portada-m-vil-claro .mobile-cover-backdrop > .container6,
+.portada-m-vil-claro .mobile-cover-backdrop > .container-margin,
+.portada-m-vil-claro .mobile-cover-backdrop > .container-margin2 {
+  background: transparent;
+}
+
+.portada-m-vil-claro .mobile-cover-backdrop .container9 {
+  background: none !important;
+}
+
+.portada-m-vil-claro .mobile-cover-backdrop .materias-disponibles,
+.portada-m-vil-claro .mobile-cover-backdrop .selecciona-una-materia-para-explorar-sus-secciones {
+  color: #ffffff;
+}
+
 .portada-m-vil-claro .subject-card,
 .portada-m-vil-claro .subject-card2,
 .portada-tablet-claro .subject-card,
