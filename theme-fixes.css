@@ -54,10 +54,25 @@
   align-self: stretch;
   display: flex;
   flex-direction: column;
+  position: relative;
+  isolation: isolate;
   background-image: url("movil/container10.png");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+.portada-m-vil-claro .mobile-cover-backdrop::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  border: 12px solid #f2ebdd;
+  pointer-events: none;
+}
+
+[data-theme-page].tema-oscuro .mobile-cover-backdrop::before {
+  border-color: #100e11;
 }
 
 .portada-m-vil-claro .mobile-cover-backdrop > .container3,
