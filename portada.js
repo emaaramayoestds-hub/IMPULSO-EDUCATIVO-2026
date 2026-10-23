@@ -77,15 +77,18 @@
     });
   }
 
-  const mobilePage = document.querySelector(
-    ".portada-m-vil-claro, .repositorio-digital-educativo-mobile"
+  const revealPage = document.querySelector(
+    ".portada-m-vil-claro, .repositorio-digital-educativo-mobile, .portada-tablet-claro, .repositorio-digital-educativo-tablet, .portada-escritorio-claro"
   );
-  const mobileViewport = window.matchMedia("(max-width: 767px)");
-  const mobileCards = mobilePage
-    ? [...mobilePage.querySelectorAll(".subject-card, .subject-card2")]
+  const revealCards = revealPage
+    ? [
+        ...revealPage.querySelectorAll(
+          ".subject-card, .subject-card2, .subject-card3, .subject-card4"
+        ),
+      ]
     : [];
 
-  if (mobileViewport.matches && mobileCards.length > 0) {
+  if (revealCards.length > 0) {
     if ("IntersectionObserver" in window) {
       const cardObserver = new IntersectionObserver(
         (entries) => {
@@ -96,13 +99,13 @@
         { threshold: 0.15, rootMargin: "0px 0px -5% 0px" }
       );
 
-      mobileCards.forEach((card) => {
-        card.classList.add("mobile-card-reveal");
+      revealCards.forEach((card) => {
+        card.classList.add("card-reveal");
         cardObserver.observe(card);
       });
     } else {
-      mobileCards.forEach((card) => {
-        card.classList.add("mobile-card-reveal", "is-in-view");
+      revealCards.forEach((card) => {
+        card.classList.add("card-reveal", "is-in-view");
       });
     }
   }
