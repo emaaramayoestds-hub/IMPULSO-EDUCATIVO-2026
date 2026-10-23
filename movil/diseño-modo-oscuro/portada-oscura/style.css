@@ -375,6 +375,7 @@
   position: relative;
 }
 .container6 {
+  background: url("../../container10.png") center / 100% 100% no-repeat;
   padding: 24px 20px 24px 20px;
   display: flex;
   flex-direction: column;
