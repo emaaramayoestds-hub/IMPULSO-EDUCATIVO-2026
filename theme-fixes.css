@@ -54,29 +54,22 @@
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  position: relative;
-  isolation: isolate;
   background-image: url("movil/container10.png");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-.portada-m-vil-claro .mobile-cover-backdrop::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  inset: 0;
-  border: 12px solid #f2ebdd;
-  pointer-events: none;
-}
-
-[data-theme-page].tema-oscuro .mobile-cover-backdrop::before {
-  border-color: #100e11;
-}
-
 .portada-m-vil-claro .mobile-cover-backdrop > .container3,
-.portada-m-vil-claro .mobile-cover-backdrop > .container6,
+.portada-m-vil-claro .mobile-cover-backdrop > .container6 {
+  background: #f2ebdd;
+}
+
+[data-theme-page].tema-oscuro .mobile-cover-backdrop > .container3,
+[data-theme-page].tema-oscuro .mobile-cover-backdrop > .container6 {
+  background: #100e11;
+}
+
 .portada-m-vil-claro .mobile-cover-backdrop > .container-margin,
 .portada-m-vil-claro .mobile-cover-backdrop > .container-margin2 {
   background: transparent;
@@ -86,8 +79,16 @@
   background: none !important;
 }
 
-.portada-m-vil-claro .mobile-cover-backdrop .materias-disponibles,
+.portada-m-vil-claro .mobile-cover-backdrop .materias-disponibles {
+  color: #0f1629;
+}
+
 .portada-m-vil-claro .mobile-cover-backdrop .selecciona-una-materia-para-explorar-sus-secciones {
+  color: #9b9991;
+}
+
+[data-theme-page].tema-oscuro .mobile-cover-backdrop .materias-disponibles,
+[data-theme-page].tema-oscuro .mobile-cover-backdrop .selecciona-una-materia-para-explorar-sus-secciones {
   color: #ffffff;
 }
 
