@@ -105,6 +105,43 @@
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.36);
 }
 
+@media (max-width: 767px) {
+  .portada-m-vil-claro .subject-card.mobile-card-reveal:not(.is-in-view),
+  .portada-m-vil-claro .subject-card2.mobile-card-reveal:not(.is-in-view),
+  .repositorio-digital-educativo-mobile .subject-card.mobile-card-reveal:not(.is-in-view),
+  .repositorio-digital-educativo-mobile .subject-card2.mobile-card-reveal:not(.is-in-view) {
+    opacity: 0;
+  }
+
+  .portada-m-vil-claro .subject-card.mobile-card-reveal.is-in-view,
+  .portada-m-vil-claro .subject-card2.mobile-card-reveal.is-in-view,
+  .repositorio-digital-educativo-mobile .subject-card.mobile-card-reveal.is-in-view,
+  .repositorio-digital-educativo-mobile .subject-card2.mobile-card-reveal.is-in-view {
+    animation: mobile-card-rebound 680ms;
+  }
+}
+
+@keyframes mobile-card-rebound {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 32px, 0) scale(0.94);
+  }
+
+  68% {
+    opacity: 1;
+    transform: translate3d(0, -7px, 0) scale(1.015);
+  }
+
+  86% {
+    transform: translate3d(0, 2px, 0) scale(0.998);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .portada-m-vil-claro .subject-card,
   .portada-m-vil-claro .subject-card2,
@@ -115,6 +152,20 @@
   .repositorio-digital-educativo-tablet .subject-card,
   .repositorio-digital-educativo-tablet .subject-card2 {
     transition: none;
+  }
+
+  .portada-m-vil-claro .subject-card.mobile-card-reveal:not(.is-in-view),
+  .portada-m-vil-claro .subject-card2.mobile-card-reveal:not(.is-in-view),
+  .repositorio-digital-educativo-mobile .subject-card.mobile-card-reveal:not(.is-in-view),
+  .repositorio-digital-educativo-mobile .subject-card2.mobile-card-reveal:not(.is-in-view) {
+    opacity: 1;
+  }
+
+  .portada-m-vil-claro .subject-card.mobile-card-reveal.is-in-view,
+  .portada-m-vil-claro .subject-card2.mobile-card-reveal.is-in-view,
+  .repositorio-digital-educativo-mobile .subject-card.mobile-card-reveal.is-in-view,
+  .repositorio-digital-educativo-mobile .subject-card2.mobile-card-reveal.is-in-view {
+    animation: none;
   }
 }
 

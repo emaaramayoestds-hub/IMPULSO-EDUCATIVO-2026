@@ -77,6 +77,36 @@
     });
   }
 
+  const mobilePage = document.querySelector(
+    ".portada-m-vil-claro, .repositorio-digital-educativo-mobile"
+  );
+  const mobileViewport = window.matchMedia("(max-width: 767px)");
+  const mobileCards = mobilePage
+    ? [...mobilePage.querySelectorAll(".subject-card, .subject-card2")]
+    : [];
+
+  if (mobileViewport.matches && mobileCards.length > 0) {
+    if ("IntersectionObserver" in window) {
+      const cardObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            entry.target.classList.toggle("is-in-view", entry.isIntersecting);
+          });
+        },
+        { threshold: 0.15, rootMargin: "0px 0px -5% 0px" }
+      );
+
+      mobileCards.forEach((card) => {
+        card.classList.add("mobile-card-reveal");
+        cardObserver.observe(card);
+      });
+    } else {
+      mobileCards.forEach((card) => {
+        card.classList.add("mobile-card-reveal", "is-in-view");
+      });
+    }
+  }
+
   const filterInput = document.querySelector("#subject-filter");
   const subjectCards = [...document.querySelectorAll("[data-subject-card]")];
 
