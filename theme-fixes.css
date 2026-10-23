@@ -68,6 +68,10 @@
   background: #100e11;
 }
 
+.portada-m-vil-claro .mobile-cover-backdrop > .container6 {
+  background: transparent;
+}
+
 .portada-m-vil-claro .mobile-cover-backdrop > .container-margin,
 .portada-m-vil-claro .mobile-cover-backdrop > .container-margin2 {
   background: transparent;
