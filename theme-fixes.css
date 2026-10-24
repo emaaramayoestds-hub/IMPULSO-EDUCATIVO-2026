@@ -244,10 +244,6 @@
   background: rgba(0, 0, 0, 0.38);
 }
 
-.matem-ticas-mobile .subject-detail .section-resource-card.card-reveal:not(.is-in-view) {
-  opacity: 1;
-}
-
 .portada-m-vil-claro .subject-card:active,
 .portada-m-vil-claro .subject-card2:active,
 .portada-tablet-claro .subject-card:active,
