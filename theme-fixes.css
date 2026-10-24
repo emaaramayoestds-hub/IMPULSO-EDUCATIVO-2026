@@ -238,6 +238,10 @@
 :is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .blur-overlay-qu-mica,
 :is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .blur-overlay-sistema-de-representaci-n,
 :is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .blur-overlay-f-sica {
+  position: absolute;
+  inset: 0;
+  width: auto;
+  height: auto;
   z-index: 0;
   background: rgba(0, 0, 0, 0.28);
   pointer-events: none;
