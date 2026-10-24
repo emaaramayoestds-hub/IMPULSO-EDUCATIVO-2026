@@ -506,7 +506,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: clamp(40px, 6vw, 118px);
+  gap: clamp(24px, 4vw, 72px);
   color: #171615;
   text-align: center;
   border: 0;
@@ -519,11 +519,22 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
-  gap: 8px;
+  text-align: left;
+  gap: 12px;
   background: transparent;
+}
+
+.cover-stats .container8,
+.cover-stats .container10,
+.cover-stats .container12 {
+  width: auto;
+  height: auto;
+  min-width: 0;
+  padding: 0;
+  flex: 0 1 auto;
+  align-items: flex-start;
 }
 
 .cover-stats ._4,
@@ -532,7 +543,7 @@
   color: inherit;
   font-size: clamp(44px, 4.5vw, 76px);
   line-height: 1;
-  text-align: center;
+  text-align: left;
 }
 
 .cover-stats .materias2,
@@ -541,7 +552,7 @@
   color: inherit;
   font-size: clamp(14px, 1.15vw, 20px);
   line-height: 1.4;
-  text-align: center;
+  text-align: left;
 }
 
 .portada-escritorio-claro .header {
@@ -784,15 +795,16 @@
   .mobile-cover-backdrop .cover-stats > div {
     flex: 1 1 0;
     align-items: center;
-    text-align: center;
+    text-align: left;
     gap: 6px;
   }
 
   .mobile-cover-backdrop .cover-stats .materias2,
   .mobile-cover-backdrop .cover-stats .recursos-totales,
   .mobile-cover-backdrop .cover-stats .secciones {
-    width: 100%;
-    text-align: center;
+    min-width: 0;
+    flex: 1 1 auto;
+    text-align: left;
   }
 
   .mobile-cover-backdrop .container9 {
