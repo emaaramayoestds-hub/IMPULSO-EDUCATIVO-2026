@@ -578,12 +578,12 @@
 
 @media (min-width: 768px) and (max-width: 1100px) {
   .cover-hero {
-    min-height: 680px;
-    padding: 68px 44px 44px;
+    min-height: 630px;
+    padding: 60px 44px 40px;
   }
 
   .cover-hero-inner {
-    min-height: 568px;
+    min-height: 530px;
     grid-template-columns: minmax(0, 1.1fr) minmax(240px, 0.9fr);
   }
 
@@ -599,6 +599,7 @@
   }
 
   .cover-intro {
+    top: 70%;
     font-size: 16px;
   }
 
@@ -610,6 +611,95 @@
   .portada-tablet-claro .header {
     padding-left: 28px;
     padding-right: 28px;
+  }
+
+  .portada-tablet-claro .container21 {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 16px 28px;
+  }
+
+  .portada-tablet-claro .container22 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .portada-tablet-claro .container25 {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+    padding-left: 24px;
+    justify-content: center;
+  }
+
+  .portada-tablet-claro .usa-tu-correo-institucional-para-descargar-los-arc {
+    max-width: 100%;
+  }
+
+  .portada-tablet-claro .edu-repositorio-2026 {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+@media (min-width: 1101px) {
+  .cover-hero {
+    min-height: 760px;
+    padding-top: 80px;
+    padding-bottom: 52px;
+  }
+
+  .cover-hero-inner {
+    min-height: 628px;
+  }
+
+  .portada-escritorio-claro .cover-intro {
+    top: 72%;
+  }
+
+  .portada-escritorio-claro .container21 {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 12px 32px;
+  }
+
+  .portada-escritorio-claro .container22 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    display: flex;
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+
+  .portada-escritorio-claro .container23 {
+    position: static;
+    flex-shrink: 0;
+  }
+
+  .portada-escritorio-claro .container26 {
+    position: static;
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+    width: auto;
+    padding-left: 28px;
+  }
+
+  .portada-escritorio-claro .container27 {
+    width: 100%;
+    height: auto;
+  }
+
+  .portada-escritorio-claro .edu-repositorio-2026 {
+    position: static;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+    align-self: end;
   }
 }
 
