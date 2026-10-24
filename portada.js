@@ -113,29 +113,100 @@
   const filterInput = document.querySelector("#subject-filter");
   const subjectCards = [...document.querySelectorAll("[data-subject-card]")];
 
-  if (!filterInput || subjectCards.length === 0) {
-    return;
-  }
-
   const normalize = (value) =>
     value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
-  filterInput.addEventListener("input", () => {
-    const query = normalize(filterInput.value.trim());
-    let visibleIndex = 0;
+  const stats = {
+    subjects: document.querySelector(".cover-stats ._4"),
+    resources: document.querySelector(".cover-stats ._102"),
+    sections: document.querySelector(".cover-stats ._10"),
+  };
+  const subjectMetrics = new Map();
+  let metricsLoaded = false;
 
-    subjectCards.forEach((card) => {
-      const matches = normalize(card.textContent).includes(query);
-      card.hidden = !matches;
+  const updateStats = () => {
+    const visibleCards = subjectCards.filter((card) => !card.hidden);
+    const totals = visibleCards.reduce(
+      (result, card) => {
+        const metrics = subjectMetrics.get(card);
+        if (metrics) {
+          result.resources += metrics.resources;
+          result.sections += metrics.sections;
+        }
+        return result;
+      },
+      { resources: 0, sections: 0 }
+    );
 
-      if (query && matches) {
-        card.style.gridColumn = String((visibleIndex % 2) + 1);
-        card.style.gridRow = String(Math.floor(visibleIndex / 2) + 1);
-        visibleIndex += 1;
-      } else if (!query) {
-        card.style.removeProperty("grid-column");
-        card.style.removeProperty("grid-row");
-      }
+    if (stats.subjects) stats.subjects.textContent = String(visibleCards.length);
+    if (metricsLoaded && stats.resources) {
+      stats.resources.textContent = String(totals.resources);
+    }
+    if (metricsLoaded && stats.sections) {
+      stats.sections.textContent = String(totals.sections);
+    }
+  };
+
+  const loadSubjectMetrics = async () => {
+    try {
+      const metrics = await Promise.all(
+        subjectCards.map(async (card) => {
+          const response = await fetch(card.href);
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status} al cargar ${card.href}`);
+          }
+          const html = await response.text();
+          const subjectDocument = new DOMParser().parseFromString(html, "text/html");
+          const resources = subjectDocument.querySelectorAll(
+            "[data-section-resource-list] [data-section]"
+          ).length;
+          const sections = subjectDocument.querySelectorAll("[data-section-link]").length;
+          return { card, resources, sections };
+        })
+      );
+
+      metrics.forEach(({ card, resources, sections }) => {
+        const count = card.querySelector("[data-subject-resource-count]");
+        if (count) count.textContent = String(resources);
+        subjectMetrics.set(card, { resources, sections });
+      });
+      metricsLoaded = true;
+    } catch (error) {
+      console.error("No se pudieron actualizar los contadores de materias.", error);
+    }
+    updateStats();
+  };
+
+  if (filterInput && subjectCards.length > 0) {
+    filterInput.addEventListener("input", () => {
+      const query = normalize(filterInput.value.trim());
+      let visibleIndex = 0;
+
+      subjectCards.forEach((card) => {
+        const matches = normalize(card.textContent).includes(query);
+        const wasHidden = card.hidden;
+        card.hidden = !matches;
+
+        if (query && matches) {
+          card.style.gridColumn = String((visibleIndex % 2) + 1);
+          card.style.gridRow = String(Math.floor(visibleIndex / 2) + 1);
+          visibleIndex += 1;
+        } else if (!query) {
+          card.style.removeProperty("grid-column");
+          card.style.removeProperty("grid-row");
+        }
+
+        if (wasHidden && matches) {
+          card.classList.remove("is-in-view");
+          void card.offsetWidth;
+          card.classList.add("is-in-view");
+        }
+      });
+      updateStats();
     });
-  });
+  }
+
+  if (subjectCards.length > 0) {
+    void loadSubjectMetrics();
+  }
 })();

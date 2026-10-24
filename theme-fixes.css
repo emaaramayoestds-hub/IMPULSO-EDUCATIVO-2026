@@ -4,6 +4,27 @@
   font-family: "Manrope", sans-serif !important;
 }
 
+[hidden] {
+  display: none !important;
+}
+
+.filtrar-materias {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline-offset: 3px;
+  background: transparent;
+}
+
+[data-theme-page].tema-oscuro:is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .filtrar-materias {
+  color: #f5f4f0;
+}
+
+[data-theme-page].tema-oscuro:is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .filtrar-materias::placeholder {
+  color: rgba(245, 244, 240, 0.65);
+}
+
 [data-theme-page].tema-oscuro {
   height: auto !important;
   min-height: 100vh;

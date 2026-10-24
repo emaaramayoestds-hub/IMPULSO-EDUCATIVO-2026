@@ -44,6 +44,31 @@
   cursor: pointer;
 }
 
+.section-search-input .buscar-recursos {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  padding: 0;
+  color: rgba(26, 18, 21, 0.72);
+  background: transparent;
+  font: inherit;
+  outline-offset: 3px;
+}
+
+.section-search-input .buscar-recursos::placeholder {
+  color: inherit;
+  opacity: 0.55;
+}
+
+[data-theme-page].tema-oscuro .section-search-input .buscar-recursos {
+  color: #f5f4f0;
+}
+
+[data-theme-page].tema-oscuro .section-search-input .buscar-recursos::placeholder {
+  color: rgba(245, 244, 240, 0.65);
+}
+
 .section-resource-meta,
 .section-resource-type {
   display: flex;
