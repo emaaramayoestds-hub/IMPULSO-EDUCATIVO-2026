@@ -18,11 +18,12 @@
 }
 
 [data-theme-page].tema-oscuro:is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .filtrar-materias {
-  color: #f5f4f0;
+  color: #0f1629;
+  caret-color: #0f1629;
 }
 
 [data-theme-page].tema-oscuro:is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .filtrar-materias::placeholder {
-  color: rgba(245, 244, 240, 0.65);
+  color: rgba(15, 22, 41, 0.55);
 }
 
 [data-theme-page].tema-oscuro {
