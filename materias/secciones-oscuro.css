@@ -1,12 +1,17 @@
 .section-link:not([aria-current="page"]) {
-  background: #0f1629;
-  border-color: #1e2a44;
+  background: #1b2940;
+  border-color: #425777;
 }
 
 .section-link:not([aria-current="page"]) > div:not(.text2):not(.text3),
 .section-link:not([aria-current="page"]) .text2 > div,
 .section-link:not([aria-current="page"]) .text3 > div {
   color: #f5f4f0;
+}
+
+.section-link:not([aria-current="page"]):hover {
+  background: #263a58;
+  border-color: #5b769d;
 }
 
 .section-link[aria-current="page"] {
@@ -28,6 +33,25 @@
   height: auto !important;
   max-height: none !important;
   overflow: visible !important;
+}
+
+.subject-detail .resource-card,
+.subject-detail .resource-card2 {
+  background: #1b2940;
+  border-color: #425777;
+}
+
+.subject-detail .resource-card2 {
+  border-left-color: #248f8d;
+}
+
+.subject-detail .container-margin > .container6,
+.subject-detail .container-margin > .container7,
+.subject-detail .container10:has(> .text .icon-search),
+.subject-detail .container10:has(> .text4 .icon-search),
+.subject-detail .container11:has(> .text .icon-search) {
+  background: #1b2940;
+  border-color: #425777;
 }
 
 .section-empty-state {
