@@ -32,7 +32,7 @@
     ...resourceList.querySelectorAll(".resource-card, .resource-card2"),
   ].filter((card) => {
     if (sections.has(card.dataset.section)) {
-      card.classList.add("section-resource-card");
+      card.classList.add("section-resource-card", "card-reveal");
       return true;
     }
     card.remove();
@@ -47,6 +47,21 @@
       visibleCount += 1;
     }
   });
+
+  if ("IntersectionObserver" in window) {
+    const cardObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("is-in-view", entry.isIntersecting);
+        });
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -5% 0px" }
+    );
+
+    cards.forEach((card) => cardObserver.observe(card));
+  } else {
+    cards.forEach((card) => card.classList.add("is-in-view"));
+  }
 
   sectionLinks.forEach((link) => {
     link.removeAttribute("aria-current");
