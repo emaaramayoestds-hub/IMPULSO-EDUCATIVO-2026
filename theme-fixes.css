@@ -380,6 +380,7 @@
 }
 
 .cover-hero-inner {
+  position: relative;
   width: 100%;
   min-height: 760px;
   margin: 0;
@@ -412,18 +413,21 @@
 }
 
 .cover-logo-slot {
-  grid-column: 2;
-  grid-row: 1 / 4;
-  width: 100%;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  z-index: 1;
+  width: 310px;
+  height: 310px;
   margin: 0;
   padding: 0;
-  align-self: center;
-  justify-self: center;
+  transform: translateX(-50%);
 }
 
 .cover-logo-frame {
   width: 310px;
   height: 310px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -450,7 +454,7 @@
   padding: 0;
   align-self: end;
   color: #171615;
-  font-size: clamp(24px, 2.1vw, 38px);
+  font-size: clamp(23px, 1.7vw, 32px);
   letter-spacing: 0.04em;
   line-height: 1.65;
 }
@@ -458,7 +462,7 @@
 .cover-intro > div {
   width: auto;
   color: inherit;
-  text-align: inherit;
+  text-align: left;
   font-size: inherit;
   line-height: inherit;
   position: static;
@@ -560,8 +564,14 @@
     height: 260px;
   }
 
+  .cover-logo-slot {
+    top: 14%;
+    width: 260px;
+    height: 260px;
+  }
+
   .cover-intro {
-    font-size: clamp(22px, 3vw, 32px);
+    font-size: clamp(20px, 2.6vw, 27px);
   }
 
   .cover-stats {
@@ -579,7 +589,6 @@
     min-height: 0;
     padding: 0;
     display: block;
-    background: #f2ebdd;
   }
 
   .mobile-cover-backdrop.cover-hero > .cover-hero-inner {
@@ -592,7 +601,7 @@
     grid-template-rows: auto auto auto auto;
     justify-items: center;
     gap: 0;
-    background: transparent;
+    background: #f2ebdd;
   }
 
   .mobile-cover-backdrop .cover-kicker {
@@ -619,8 +628,8 @@
     grid-row: 3;
     width: 100%;
     margin: 0;
-    text-align: center;
-    font-size: clamp(18px, 5vw, 23px);
+    text-align: left;
+    font-size: clamp(16px, 4.2vw, 20px);
     letter-spacing: 0.025em;
     line-height: 1.65;
   }
@@ -654,7 +663,7 @@
     font-size: clamp(11px, 3.1vw, 14px);
   }
 
-  [data-theme-page].tema-oscuro .mobile-cover-backdrop.cover-hero {
+  [data-theme-page].tema-oscuro .mobile-cover-backdrop.cover-hero > .cover-hero-inner {
     background: #100e11;
   }
 }
