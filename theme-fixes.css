@@ -31,6 +31,13 @@
   overflow-y: visible !important;
 }
 
+@media (max-width: 380px) {
+  .sistema-de-representaci-n-mobile .heading-1 .sistema-de-representaci-n2 {
+    font-size: clamp(30px, 9vw, 36px);
+    line-height: 1.1;
+  }
+}
+
 [data-theme-detail].tema-oscuro .container6 {
   grid-template-rows: auto !important;
   height: auto !important;
