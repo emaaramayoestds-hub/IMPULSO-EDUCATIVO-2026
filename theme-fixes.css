@@ -448,12 +448,12 @@
 }
 
 .cover-intro {
-  grid-column: 1;
-  grid-row: 3;
+  position: absolute;
+  top: 63%;
+  left: 0;
   width: min(100%, 500px);
   margin: 0;
   padding: 0;
-  align-self: end;
   color: #171615;
   font-size: 16px;
   letter-spacing: normal;
@@ -629,14 +629,17 @@
   }
 
   .mobile-cover-backdrop .cover-intro {
-    grid-column: 1;
-    grid-row: 3;
+    position: static;
     width: 100%;
     margin: 0;
     text-align: left;
     font-size: 16px;
     letter-spacing: normal;
     line-height: 27.2px;
+  }
+
+  .mobile-cover-backdrop > .container-margin {
+    padding-bottom: 72px;
   }
 
   .mobile-cover-backdrop .cover-stats {
