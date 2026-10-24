@@ -207,10 +207,10 @@
   text-decoration: none;
 }
 
-.portada-m-vil-claro .blur-overlay,
-.portada-m-vil-claro .blur-overlay-qu-mica,
-.portada-m-vil-claro .blur-overlay-sistema-de-representaci-n,
-.portada-m-vil-claro .blur-overlay-f-sica {
+:is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .blur-overlay,
+:is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .blur-overlay-qu-mica,
+:is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .blur-overlay-sistema-de-representaci-n,
+:is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .blur-overlay-f-sica {
   z-index: 0;
   background: rgba(0, 0, 0, 0.28);
   pointer-events: none;
@@ -218,8 +218,7 @@
   backdrop-filter: blur(10px);
 }
 
-.portada-m-vil-claro .subject-card > :not(.blur-overlay),
-.portada-m-vil-claro .subject-card2 > :not(.blur-overlay-qu-mica):not(.blur-overlay-sistema-de-representaci-n):not(.blur-overlay-f-sica) {
+:is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) :is(.subject-card, .subject-card2, .subject-card3, .subject-card4) > :not(:is(.blur-overlay, .blur-overlay-qu-mica, .blur-overlay-sistema-de-representaci-n, .blur-overlay-f-sica)) {
   position: relative;
   z-index: 1;
 }
@@ -232,10 +231,10 @@
   outline-offset: 3px;
 }
 
-[data-theme-page].tema-oscuro.portada-m-vil-claro .blur-overlay,
-[data-theme-page].tema-oscuro.portada-m-vil-claro .blur-overlay-qu-mica,
-[data-theme-page].tema-oscuro.portada-m-vil-claro .blur-overlay-sistema-de-representaci-n,
-[data-theme-page].tema-oscuro.portada-m-vil-claro .blur-overlay-f-sica {
+[data-theme-page].tema-oscuro:is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .blur-overlay,
+[data-theme-page].tema-oscuro:is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .blur-overlay-qu-mica,
+[data-theme-page].tema-oscuro:is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .blur-overlay-sistema-de-representaci-n,
+[data-theme-page].tema-oscuro:is(.portada-m-vil-claro, .portada-tablet-claro, .portada-escritorio-claro) .blur-overlay-f-sica {
   background: rgba(0, 0, 0, 0.38);
 }
 
