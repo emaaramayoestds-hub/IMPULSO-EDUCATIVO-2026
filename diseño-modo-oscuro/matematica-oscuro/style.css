@@ -633,6 +633,24 @@
   position: relative;
   overflow: visible;
 }
+.icon-video {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.video {
+  color: #7c3aed;
+  text-align: left;
+  font-family: "JetBrainsMono-Medium", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  letter-spacing: 0.44px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
 .pdf {
   color: #dc2626;
   text-align: left;
