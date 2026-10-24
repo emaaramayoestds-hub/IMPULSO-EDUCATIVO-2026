@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:where(html, body, body *) {
+  font-family: "Manrope", sans-serif !important;
+}
+
 [data-theme-page].tema-oscuro {
   height: auto !important;
   min-height: 100vh;
