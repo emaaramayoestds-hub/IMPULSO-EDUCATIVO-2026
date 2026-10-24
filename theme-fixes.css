@@ -198,6 +198,51 @@
   transition: transform 240ms ease-in-out, box-shadow 240ms ease-in-out;
 }
 
+.portada-m-vil-claro .subject-card,
+.portada-m-vil-claro .subject-card2,
+.portada-tablet-claro .subject-card,
+.portada-tablet-claro .subject-card2 {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.portada-m-vil-claro .blur-overlay,
+.portada-m-vil-claro .blur-overlay-qu-mica,
+.portada-m-vil-claro .blur-overlay-sistema-de-representaci-n,
+.portada-m-vil-claro .blur-overlay-f-sica {
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.28);
+  pointer-events: none;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.portada-m-vil-claro .subject-card > :not(.blur-overlay),
+.portada-m-vil-claro .subject-card2 > :not(.blur-overlay-qu-mica):not(.blur-overlay-sistema-de-representaci-n):not(.blur-overlay-f-sica) {
+  position: relative;
+  z-index: 1;
+}
+
+.portada-m-vil-claro .subject-card:focus-visible,
+.portada-m-vil-claro .subject-card2:focus-visible,
+.portada-tablet-claro .subject-card:focus-visible,
+.portada-tablet-claro .subject-card2:focus-visible {
+  outline: 3px solid #248f8d;
+  outline-offset: 3px;
+}
+
+[data-theme-page].tema-oscuro.portada-m-vil-claro .blur-overlay,
+[data-theme-page].tema-oscuro.portada-m-vil-claro .blur-overlay-qu-mica,
+[data-theme-page].tema-oscuro.portada-m-vil-claro .blur-overlay-sistema-de-representaci-n,
+[data-theme-page].tema-oscuro.portada-m-vil-claro .blur-overlay-f-sica {
+  background: rgba(0, 0, 0, 0.38);
+}
+
+.matem-ticas-mobile .subject-detail .section-resource-card.card-reveal:not(.is-in-view) {
+  opacity: 1;
+}
+
 .portada-m-vil-claro .subject-card:active,
 .portada-m-vil-claro .subject-card2:active,
 .portada-tablet-claro .subject-card:active,
