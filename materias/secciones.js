@@ -8,6 +8,8 @@
     return;
   }
 
+  resourceList.parentElement.classList.add("section-resource-panel");
+
   const getSectionTitle = (link) => {
     const title = link.cloneNode(true);
     title.querySelectorAll(".text2, .text3").forEach((count) => count.remove());
@@ -61,14 +63,6 @@
     : "Sección no encontrada";
   resourceList.hidden = visibleCount === 0;
 
-  if (params.has("seccion")) {
-    const backLink = document.createElement("a");
-    backLink.className = "section-back-link";
-    backLink.href = "./";
-    backLink.textContent = "Volver a las secciones";
-    resourceList.insertAdjacentElement("afterend", backLink);
-  }
-
   const emptyState = document.createElement("p");
   emptyState.className = "section-empty-state";
   emptyState.setAttribute("role", "status");
@@ -77,6 +71,15 @@
     : "La sección solicitada no existe.";
   resourceList.insertAdjacentElement("afterend", emptyState);
   emptyState.hidden = visibleCount > 0;
+
+  if (params.has("seccion")) {
+    const backLink = document.createElement("a");
+    backLink.className = "section-back-link";
+    backLink.href = "./";
+    backLink.textContent = "Volver a las secciones";
+    emptyState.insertAdjacentElement("afterend", backLink);
+  }
+
   document.title = sectionTitle
     ? `${sectionTitle} | Repositorio Educativo`
     : "Sección no encontrada";

@@ -37,6 +37,12 @@
   color: #248f8d;
 }
 
+.section-resource-panel {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
 .section-empty-state {
   margin: 16px 0;
   padding: 20px;

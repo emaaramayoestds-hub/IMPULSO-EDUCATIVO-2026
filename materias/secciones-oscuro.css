@@ -24,6 +24,12 @@
   color: #5cccc7;
 }
 
+.section-resource-panel {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
 .section-empty-state {
   color: #eff3cd;
 }
