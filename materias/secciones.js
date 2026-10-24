@@ -66,7 +66,7 @@
     backLink.className = "section-back-link";
     backLink.href = "./";
     backLink.textContent = "Volver a las secciones";
-    heading.insertAdjacentElement("afterend", backLink);
+    resourceList.insertAdjacentElement("afterend", backLink);
   }
 
   const emptyState = document.createElement("p");
