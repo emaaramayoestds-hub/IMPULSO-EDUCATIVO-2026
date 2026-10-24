@@ -45,13 +45,11 @@
   border-left-color: #248f8d;
 }
 
-.subject-detail .container-margin > .container6,
-.subject-detail .container-margin > .container7,
 .subject-detail .container10:has(> .text .icon-search),
 .subject-detail .container10:has(> .text4 .icon-search),
 .subject-detail .container11:has(> .text .icon-search) {
-  background: #1b2940;
-  border-color: #425777;
+  background: #243650 !important;
+  border-color: #5b769d !important;
 }
 
 .section-empty-state {

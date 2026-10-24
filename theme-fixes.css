@@ -139,14 +139,6 @@
   border-left-color: #248f8d !important;
 }
 
-[data-theme-detail].tema-oscuro .subject-detail .container-margin > .container6,
-[data-theme-detail].tema-oscuro .subject-detail .container-margin > .container7,
-[data-theme-detail].tema-oscuro .subject-detail .container10:has(.icon-search),
-[data-theme-detail].tema-oscuro .subject-detail .container11:has(.icon-search) {
-  background: #1b2940 !important;
-  border-color: #425777 !important;
-}
-
 [data-theme-page].tema-oscuro .subject-card,
 [data-theme-page].tema-oscuro .subject-card2,
 [data-theme-page].tema-oscuro .subject-card3,
