@@ -2,6 +2,8 @@
   const heading = document.querySelector("[data-section-list-heading]");
   const resourceList = document.querySelector("[data-section-resource-list]");
   const sectionLinks = [...document.querySelectorAll("[data-section-link]")];
+  const searchIcon = document.querySelector(".icon-search");
+  const searchBar = searchIcon?.closest(".container10, .container11");
 
   if (!heading || !resourceList || sectionLinks.length === 0) {
     console.error("Faltan los controles de secciones o su lista de recursos.");
@@ -9,6 +11,7 @@
   }
 
   resourceList.parentElement.classList.add("section-resource-panel");
+  searchBar?.classList.add("section-search-input");
 
   const getSectionTitle = (link) => {
     const title = link.cloneNode(true);
@@ -29,6 +32,7 @@
     ...resourceList.querySelectorAll(".resource-card, .resource-card2"),
   ].filter((card) => {
     if (sections.has(card.dataset.section)) {
+      card.classList.add("section-resource-card");
       return true;
     }
     card.remove();

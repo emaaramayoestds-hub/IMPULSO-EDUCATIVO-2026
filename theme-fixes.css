@@ -128,17 +128,6 @@
   border-color: #7d9bc5 !important;
 }
 
-[data-theme-detail].tema-oscuro .subject-detail .resource-card,
-[data-theme-detail].tema-oscuro .subject-detail .resource-card2 {
-  background: #243650 !important;
-  border-color: #5b769d !important;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
-}
-
-[data-theme-detail].tema-oscuro .subject-detail .resource-card2 {
-  border-left-color: #248f8d !important;
-}
-
 [data-theme-page].tema-oscuro .subject-card,
 [data-theme-page].tema-oscuro .subject-card2,
 [data-theme-page].tema-oscuro .subject-card3,
