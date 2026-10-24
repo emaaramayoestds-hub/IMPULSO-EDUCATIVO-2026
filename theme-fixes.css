@@ -516,13 +516,15 @@
 
 .cover-stats > div {
   min-width: 0;
+  width: auto;
+  flex: 0 1 auto;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   text-align: left;
-  gap: 12px;
+  gap: clamp(14px, 1.6vw, 24px);
   background: transparent;
 }
 
@@ -788,15 +790,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    gap: clamp(4px, 1.5vw, 8px);
     text-align: center;
   }
 
   .mobile-cover-backdrop .cover-stats > div {
     flex: 1 1 0;
+    width: 0;
+    min-width: 0;
     align-items: center;
     text-align: left;
-    gap: 6px;
+    gap: clamp(4px, 1.2vw, 7px);
   }
 
   .mobile-cover-backdrop .cover-stats .materias2,
@@ -805,22 +809,23 @@
     min-width: 0;
     flex: 1 1 auto;
     text-align: left;
+    overflow-wrap: anywhere;
   }
 
-  .mobile-cover-backdrop .container9 {
-    width: 100%;
+  .mobile-cover-backdrop .cover-stats > .container9 {
+    width: 0;
   }
 
   .mobile-cover-backdrop .cover-stats ._4,
   .mobile-cover-backdrop .cover-stats ._102,
   .mobile-cover-backdrop .cover-stats ._10 {
-    font-size: clamp(30px, 9vw, 42px);
+    font-size: clamp(24px, 7vw, 34px);
   }
 
   .mobile-cover-backdrop .cover-stats .materias2,
   .mobile-cover-backdrop .cover-stats .recursos-totales,
   .mobile-cover-backdrop .cover-stats .secciones {
-    font-size: clamp(11px, 3.1vw, 14px);
+    font-size: clamp(9px, 2.4vw, 11px);
   }
 
   [data-theme-page].tema-oscuro .mobile-cover-backdrop.cover-hero > .cover-hero-inner {
