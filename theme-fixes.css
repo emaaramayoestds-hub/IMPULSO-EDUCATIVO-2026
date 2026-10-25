@@ -96,9 +96,12 @@
 .impulso-footer-logo {
   display: block;
   width: clamp(180px, 24vw, 280px);
+  height: clamp(180px, 24vw, 280px);
   max-width: 100%;
   aspect-ratio: 1;
-  object-fit: contain;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
   justify-self: center;
   align-self: center;
   grid-column: 2;
@@ -162,6 +165,7 @@
 
   .impulso-footer-logo {
     width: clamp(84px, 24vw, 150px);
+    height: clamp(84px, 24vw, 150px);
   }
 
   .impulso-footer-partners ul {
