@@ -1,0 +1,266 @@
+.container-margin,
+.container-margin * {
+  box-sizing: border-box;
+}
+.container-margin {
+  padding: 24px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 631px;
+  position: relative;
+}
+.container {
+  background: #100e11;
+  border-style: solid;
+  border-color: #3a2d40;
+  border-width: 1px 0px 0px 0px;
+  padding: 32px 40px 32px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 997px;
+  height: 631px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.container2 {
+  flex-shrink: 0;
+  width: 917px;
+  height: 94.5px;
+  max-width: 1100px;
+  position: absolute;
+  left: 40px;
+  top: 34.33px;
+}
+.container3 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0px;
+  top: 0.75px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div {
+  color: #248f8d;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  position: relative;
+}
+.container4 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 310.2px;
+  position: relative;
+}
+.container5 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.almacenamiento-en-la-nube {
+  color: #ffffff;
+  text-align: left;
+  font-family: "JetBrainsMono-Medium", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  position: relative;
+}
+.container6 {
+  padding: 2px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 310.2px;
+  height: 19px;
+  position: relative;
+}
+.google-drive-institucional-one-drive-acad-mico {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: relative;
+}
+.container7 {
+  border-style: solid;
+  border-color: #1e2a44;
+  border-width: 0px 0px 0px 1px;
+  padding: 0px 0px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 469.72px;
+  position: absolute;
+  left: 380.2px;
+  top: 0px;
+}
+.acceso-requerido {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: relative;
+}
+.container8 {
+  padding: 2px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 428.72px;
+  height: 22px;
+  position: relative;
+}
+.usa-tu-correo-institucional-para-descargar-los-arc {
+  color: #aaaaaa;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: 400;
+  position: relative;
+}
+.edu-repositorio-2026 {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 16.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 778.39px;
+  top: 78px;
+}
+.container9 {
+  border-style: solid;
+  border-color: #1e2a44;
+  border-width: 0px 0px 0px 1px;
+  padding: 0px 0px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 469.72px;
+  position: absolute;
+  left: 40px;
+  top: 121px;
+}
+.container10 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 20px;
+  position: relative;
+}
+.que-es-impulso-educativo {
+  color: #7a8aaa;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 41px;
+  top: 20px;
+}
+.usa-tu-correo-institucional-para-descargar-los-arc2 {
+  color: #aaaaaa;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 31px;
+  width: 482px;
+}
+.usa-tu-correo-institucional-para-descargar-los-arc-2-span {
+  font-family: "Inter-Bold", sans-serif;
+  font-weight: 700;
+}
+.usa-tu-correo-institucional-para-descargar-los-arc-2-span2 {
+  font-family: "Inter-Regular", sans-serif;
+}
+.usa-tu-correo-institucional-para-descargar-los-arc3 {
+  color: #d0bd2a;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 19.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 322px;
+  top: 452px;
+}
+.partners-del-desarrollo-del-proyecto {
+  color: #00e20f;
+  text-align: left;
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 134px;
+  top: 422px;
+}
+.usa-tu-correo-institucional-para-descargar-los-arc4 {
+  color: #d0bd2a;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 19.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 145px;
+  top: 452px;
+}

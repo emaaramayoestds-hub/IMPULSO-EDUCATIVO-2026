@@ -8,6 +8,120 @@
   display: none !important;
 }
 
+.impulso-footer {
+  align-self: stretch;
+  border-top: 1px solid #3a2d40;
+  color: #aaaaaa;
+  background: #100e11;
+}
+
+.impulso-footer-inner {
+  display: grid;
+  width: min(100% - 48px, 1100px);
+  margin: 0 auto;
+  padding: 36px 0 24px;
+  gap: 28px;
+}
+
+.impulso-footer-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #1e2a44;
+}
+
+.impulso-footer-storage {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.impulso-footer-cloud {
+  color: #248f8d;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.impulso-footer h2 {
+  margin: 0 0 8px;
+  color: #7a8aaa;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.impulso-footer-storage h2 {
+  color: #ffffff;
+  letter-spacing: normal;
+}
+
+.impulso-footer p,
+.impulso-footer ul {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.impulso-footer-access {
+  padding-left: 32px;
+  border-left: 1px solid #1e2a44;
+}
+
+.impulso-footer-about {
+  max-width: 760px;
+}
+
+.impulso-footer-about strong {
+  color: #d0bd2a;
+  font-weight: 700;
+}
+
+.impulso-footer-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.impulso-footer-groups ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 20px;
+  padding: 0;
+  color: #d0bd2a;
+  list-style: none;
+}
+
+.impulso-footer-copyright {
+  justify-self: end;
+  color: #7a8aaa;
+  font-size: 11px !important;
+}
+
+@media (max-width: 700px) {
+  .impulso-footer-inner {
+    width: min(100% - 40px, 1100px);
+    padding: 28px 0 20px;
+    gap: 24px;
+  }
+
+  .impulso-footer-top {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .impulso-footer-access {
+    padding: 18px 0 0;
+    border-top: 1px solid #1e2a44;
+    border-left: 0;
+  }
+
+  .impulso-footer-groups {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+}
+
 .filtrar-materias {
   display: block;
   width: 100%;
