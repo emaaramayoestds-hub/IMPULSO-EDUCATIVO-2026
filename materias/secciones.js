@@ -44,7 +44,9 @@
     const cardObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          entry.target.classList.toggle("is-in-view", entry.isIntersecting);
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-in-view");
+          }
         });
       },
       { threshold: 0.15, rootMargin: "0px 0px -5% 0px" }
@@ -79,6 +81,9 @@
 
     cards.forEach((card) => {
       card.hidden = !visibleSet.has(card);
+      if (visibleSet.has(card)) {
+        card.classList.add("is-in-view");
+      }
     });
 
     sectionLinks.forEach((link) => {
