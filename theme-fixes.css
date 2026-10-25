@@ -17,7 +17,7 @@
 
 .impulso-footer-inner {
   display: grid;
-  width: min(100% - 48px, 1100px);
+  width: min(100% - 48px, 1280px);
   margin: 0 auto;
   padding: 36px 0 24px;
   gap: 28px;
@@ -69,7 +69,7 @@
 }
 
 .impulso-footer-about {
-  max-width: 760px;
+  max-width: 920px;
 }
 
 .impulso-footer-about strong {
@@ -79,8 +79,29 @@
 
 .impulso-footer-groups {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 32px;
+  grid-template-columns: minmax(180px, 0.65fr) minmax(0, 1.35fr);
+  align-items: center;
+  gap: clamp(28px, 6vw, 88px);
+  padding: 12px 0;
+}
+
+.impulso-footer-logo {
+  display: block;
+  width: clamp(180px, 24vw, 280px);
+  max-width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  justify-self: center;
+  filter: brightness(0) invert(1);
+}
+
+.impulso-footer-partners {
+  min-width: 0;
+}
+
+.impulso-footer-partners ul {
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, auto);
 }
 
 .impulso-footer-groups ul {
@@ -100,7 +121,7 @@
 
 @media (max-width: 700px) {
   .impulso-footer-inner {
-    width: min(100% - 40px, 1100px);
+    width: min(100% - 40px, 1280px);
     padding: 28px 0 20px;
     gap: 24px;
   }
@@ -117,8 +138,20 @@
   }
 
   .impulso-footer-groups {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 20px;
+    grid-template-columns: minmax(84px, 0.35fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 16px;
+  }
+
+  .impulso-footer-logo {
+    width: clamp(84px, 24vw, 150px);
+  }
+
+  .impulso-footer-partners ul {
+    grid-auto-flow: row;
+    grid-template-rows: none;
+    gap: 4px 8px;
+    font-size: 11px;
   }
 }
 
