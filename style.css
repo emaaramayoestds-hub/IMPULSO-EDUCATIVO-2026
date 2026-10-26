@@ -1368,21 +1368,3 @@
   outline: 2px solid #248f8d;
   outline-offset: 3px;
 }
-
-.portada-escritorio-claro [data-subject-card] {
-  transform: none;
-  backface-visibility: visible;
-  will-change: auto;
-}
-
-.portada-escritorio-claro
-  :is(
-    .blur-overlay,
-    .blur-overlay-qu-mica,
-    .blur-overlay-sistema-de-representaci-n,
-    .blur-overlay-f-sica
-  ) {
-  background: rgba(8, 12, 24, 0.32);
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
-}

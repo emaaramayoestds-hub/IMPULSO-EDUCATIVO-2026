@@ -523,10 +523,26 @@
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.36);
 }
 
+.portada-escritorio-claro .subject-card {
+  background-image: url("./subject-card0.png") !important;
+}
+
+.portada-escritorio-claro .subject-card2 {
+  background-image: url("./subject-card1.png") !important;
+}
+
+.portada-escritorio-claro .subject-card3 {
+  background-image: url("./subject-card2.png") !important;
+}
+
+.portada-escritorio-claro .subject-card4 {
+  background-image: url("./subject-card3.png") !important;
+}
+
 .portada-escritorio-claro [data-subject-card] {
-  transform: none;
-  backface-visibility: visible;
-  will-change: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .portada-escritorio-claro
@@ -536,8 +552,16 @@
     .blur-overlay-sistema-de-representaci-n,
     .blur-overlay-f-sica
   ) {
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
+  background: rgba(8, 12, 24, 0.28);
+  -webkit-backdrop-filter: blur(1.5px);
+  backdrop-filter: blur(1.5px);
+}
+
+.portada-escritorio-claro .blur-overlay-sistema-de-representaci-n,
+.portada-escritorio-claro .blur-overlay-f-sica,
+.portada-escritorio-claro .blur-overlay {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 @media (prefers-reduced-motion: no-preference) {
