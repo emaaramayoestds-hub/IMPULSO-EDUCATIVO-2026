@@ -340,11 +340,19 @@
 }
 
 [data-theme-page].tema-oscuro.portada-escritorio-claro .desktop-subject-area {
+<<<<<<< HEAD
   background-image: url("diseño-modo-oscuro/portada-oscura/container18.png");
 }
 
 [data-theme-page].tema-oscuro.portada-tablet-claro .desktop-subject-area {
   background-image: url("tablet/diseño-modo-oscuro/portada-oscuro/container18.png");
+=======
+  background-image: url("dise%E0%B8%84o-modo-oscuro/portada-oscura/container18.png");
+}
+
+[data-theme-page].tema-oscuro.portada-tablet-claro .desktop-subject-area {
+  background-image: url("tablet/dise%E0%B8%84o-modo-oscuro/portada-oscuro/container18.png");
+>>>>>>> 6d7a1d653077b61af276225a53b3183863db0131
 }
 
 .desktop-subject-backdrop > .container13,
@@ -1096,7 +1104,11 @@
   }
 
   [data-theme-page].tema-oscuro .mobile-cover-backdrop.cover-hero {
+<<<<<<< HEAD
     background-image: url("movil/diseño-modo-oscuro/portada-oscura/container10.png");
+=======
+    background-image: url("movil/dise%E0%B8%84o-modo-oscuro/portada-oscura/container10.png");
+>>>>>>> 6d7a1d653077b61af276225a53b3183863db0131
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
