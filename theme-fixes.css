@@ -523,6 +523,23 @@
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.36);
 }
 
+.portada-escritorio-claro [data-subject-card] {
+  transform: none;
+  backface-visibility: visible;
+  will-change: auto;
+}
+
+.portada-escritorio-claro
+  :is(
+    .blur-overlay,
+    .blur-overlay-qu-mica,
+    .blur-overlay-sistema-de-representaci-n,
+    .blur-overlay-f-sica
+  ) {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .portada-m-vil-claro .subject-card.card-reveal:not(.is-in-view),
   .portada-m-vil-claro .subject-card2.card-reveal:not(.is-in-view),
