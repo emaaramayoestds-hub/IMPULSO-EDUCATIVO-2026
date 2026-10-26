@@ -464,6 +464,28 @@
   background: rgba(0, 0, 0, 0.38);
 }
 
+[data-theme-page].tema-oscuro.portada-m-vil-claro .subject-card {
+  background-image: url("movil/subject-card0.png") !important;
+}
+
+[data-theme-page].tema-oscuro.portada-m-vil-claro .subject-card2[href*="Quimica"] {
+  background-image: url("movil/subject-card1.png") !important;
+}
+
+[data-theme-page].tema-oscuro.portada-m-vil-claro .subject-card2[href*="SisDeRepr"] {
+  background-image: url("movil/subject-card2.png") !important;
+}
+
+[data-theme-page].tema-oscuro.portada-m-vil-claro .subject-card2[href*="Fisica"] {
+  background-image: url("movil/subject-card3.png") !important;
+}
+
+[data-theme-page].tema-oscuro.portada-m-vil-claro :is(.subject-card, .subject-card2) {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .portada-m-vil-claro .subject-card:active,
 .portada-m-vil-claro .subject-card2:active,
 .portada-tablet-claro .subject-card:active,
