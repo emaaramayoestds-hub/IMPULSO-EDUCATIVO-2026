@@ -108,6 +108,11 @@
   text-transform: uppercase;
 }
 
+.section-resource-level-easy {
+  border-color: #16a34a;
+  color: #16a34a;
+}
+
 .section-resource-title {
   margin-top: 12px;
   color: #1a1215;
