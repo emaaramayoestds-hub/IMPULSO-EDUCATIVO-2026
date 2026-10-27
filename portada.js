@@ -137,6 +137,9 @@
       },
       { resources: 0, sections: 0 }
     );
+    if (document.querySelector("[data-social-section]")) {
+      totals.sections += 1;
+    }
 
     if (stats.subjects) stats.subjects.textContent = String(visibleCards.length);
     if (metricsLoaded && stats.resources) {
