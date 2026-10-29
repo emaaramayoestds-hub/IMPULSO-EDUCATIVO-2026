@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-label="TikTok">
+  <circle cx="180" cy="180" r="157" fill="#000"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="31">
+    <path stroke="#fe2c55" d="M220 92v155c0 34-28 61-62 61-28 0-51-19-58-45"/>
+    <path stroke="#25f4ee" d="M204 78v155c0 34-28 61-62 61-28 0-51-19-58-45"/>
+    <path stroke="#fff" d="M212 85v155c0 34-28 61-62 61-28 0-51-19-58-45M212 85c10 25 29 40 61 42"/>
+  </g>
+  <path fill="#fff" d="M211 85h43c6 18 16 31 31 38v35c-34-3-57-20-74-46z"/>
+</svg>

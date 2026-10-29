@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-label="YouTube">
+  <circle cx="180" cy="180" r="157" fill="#ff1018"/>
+  <circle cx="180" cy="180" r="157" fill="none" stroke="#d62c38" stroke-width="8"/>
+  <rect x="82" y="111" width="196" height="138" rx="39" fill="#fff8f8"/>
+  <path fill="#ff1018" d="m157 143 0 74 65-37z"/>
+</svg>
